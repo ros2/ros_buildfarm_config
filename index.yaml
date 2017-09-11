@@ -2,14 +2,14 @@
 # ROS buildfarm index file
 ---
 distributions:
-  r2b2:
-    doc_builds: {}
-    notification_emails:
-      - stevenragnarok@osrfoundation.org
-    release_builds:
-      default: r2b2/release-build.yaml
-      uxv8: r2b2/release-xenial-arm64-build.yaml
-    source_builds: {}
+#  r2b2:
+#    doc_builds: {}
+#    notification_emails:
+#      - stevenragnarok@osrfoundation.org
+#    release_builds:
+#      default: r2b2/release-build.yaml
+#      uxv8: r2b2/release-xenial-arm64-build.yaml
+#    source_builds: {}
 jenkins_url: http://build.ros2.org/
 notification_emails:
 - stevenragnarok@osrfoundation.org
