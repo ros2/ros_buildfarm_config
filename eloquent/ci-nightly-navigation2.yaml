@@ -6,10 +6,11 @@ build_environment_variables:
   LD_LIBRARY_PATH: '/opt/ros/melodic/lib:$LD_LIBRARY_PATH'
   NDDSHOME: '/opt/rti.com/rti_connext_dds-5.3.1'
   PYTHONPATH: '/opt/ros/melodic/lib/python2.7/dist-packages:$PYTHONPATH'
+  ROS_PACKAGE_PATH: '/opt/ros/melodic/share'
   ROS_PYTHON_VERSION: '3'
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 build_tool: colcon
-build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release --no-warn-unused-cli'
+build_tool_args: '--cmake-args --no-warn-unused-cli'
 install_packages:
 - libasio-dev # for FastRTPS
 - libtinyxml2-dev # for FastRTPS
@@ -101,6 +102,6 @@ targets:
       amd64:
 type: ci-build
 underlay_from_ci_jobs:
-- nightly-release
+- nightly-fastrtps
 - nightly-navigation2-prerequisites
 version: 1
