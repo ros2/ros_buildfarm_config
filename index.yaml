@@ -42,6 +42,7 @@ distributions:
       nightly-cyclonedds: eloquent/ci-nightly-cyclonedds.yaml
       nightly-debug: eloquent/ci-nightly-debug.yaml
       nightly-extra-rmw-release: eloquent/ci-nightly-extra-rmw-release.yaml
+      nightly-performance: eloquent/ci-nightly-performance.yaml
       nightly-fastrtps: eloquent/ci-nightly-fastrtps.yaml
       nightly-fastrtps-dynamic: eloquent/ci-nightly-fastrtps-dynamic.yaml
       nightly-navigation2: eloquent/ci-nightly-navigation2.yaml
