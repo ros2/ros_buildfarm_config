@@ -112,7 +112,7 @@ show_plots:
   Performance Test Results:
   - title: Average Round-Trip Time
     y_axis_label: Milliseconds
-    master_csv_name: plot-7413814074193988426.csv
+    master_csv_name: plot-6509911700247260954.csv
     style: line
     y_axis_exclude_zero: False
     data_series:
@@ -123,7 +123,7 @@ show_plots:
       url: /job/Eci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%.png
   - title: Max Resident Set Size
     y_axis_label: Megabytes
-    master_csv_name: plot-4241977004052500689.csv
+    master_csv_name: plot-8724667824625016735.csv
     style: line
     y_axis_exclude_zero: True
     data_series:
