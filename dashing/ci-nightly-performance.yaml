@@ -132,8 +132,8 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 1
       url: /job/Dci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%.png
-  - title: Received packets
-    y_axis_label: Total Count
+  - title: Received packets per second
+    y_axis_label: Packets per second
     master_csv_name: plot-2973118048941445403.csv
     style: line
     y_axis_exclude_zero: True
@@ -143,8 +143,8 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 2
       url: /job/Dci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%_histogram.png
-  - title: Sent packets
-    y_axis_label: Total Count
+  - title: Sent packets per second
+    y_axis_label: Packets per second
     master_csv_name: plot-2819868998711663078.csv
     style: line
     y_axis_exclude_zero: True
@@ -155,7 +155,7 @@ show_plots:
       selection_value: 3
       url: /job/Dci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%_histogram.png
   - title: Lost packets
-    y_axis_label: Number
+    y_axis_label: Total Count
     master_csv_name: plot-8814043121736352120.csv
     style: line
     y_axis_exclude_zero: True
