@@ -132,8 +132,8 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 1
       url: /job/Eci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%.png
-  - title: Received packets
-    y_axis_label: Total Count
+  - title: Received packets per second
+    y_axis_label: Packets per second
     master_csv_name: plot-7655147888582609753.csv
     style: line
     y_axis_exclude_zero: True
@@ -143,8 +143,8 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 2
       url: /job/Eci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%_histogram.png
-  - title: Sent packets
-    y_axis_label: Total Count
+  - title: Sent packets per second
+    y_axis_label: Packets per second
     master_csv_name: plot-2068523541301655539.csv
     style: line
     y_axis_exclude_zero: True
