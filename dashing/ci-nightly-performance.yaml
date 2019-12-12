@@ -133,7 +133,7 @@ show_plots:
       selection_value: 1
       url: /job/Dci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%.png
   - title: Received packets
-    y_axis_label: Number
+    y_axis_label: Total Count
     master_csv_name: plot-8724667824625016791.csv
     style: line
     y_axis_exclude_zero: True
