@@ -165,7 +165,7 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 4
       url: /job/Eci__nightly-performance_ubuntu_bionic_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/performance_test_results_%name%_histogram.png
-  - title: CPU usage
+  - title: CPU Usage
     y_axis_label: Utilization (%)
     master_csv_name: plot-4701555696089273381.csv
     style: line
