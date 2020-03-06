@@ -5,7 +5,7 @@ build_environment_variables:
   RMW_IMPLEMENTATIONS: 'rmw_cyclonedds_cpp:rmw_fastrtps_cpp'
   ROS_PYTHON_VERSION: '3'
 build_tool: colcon
-build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release --no-warn-unused-cli'
+build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TESTS=1 --no-warn-unused-cli'
 install_packages:
 - default-jdk # for CycloneDDS
 - libasio-dev # for FastRTPS
