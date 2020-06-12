@@ -73,7 +73,7 @@ distributions:
       ubv8: foxy/release-focal-arm64-build.yaml
     source_builds:
       default: foxy/source-build.yaml
-  foxy:
+  rolling:
     ci_builds: {}
     doc_builds: {}
     notification_emails:
