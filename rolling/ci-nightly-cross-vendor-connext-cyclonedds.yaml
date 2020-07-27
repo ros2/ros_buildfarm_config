@@ -15,6 +15,7 @@ install_packages:
 - default-jdk # for CycloneDDS
 - libtinyxml2-dev # for FastRTPS, even though disabled it is needed for the typesupport
 - maven # for CycloneDDS
+- libssl-dev  # for Connext and CycloneDDS
 jenkins_job_label: ci-agent
 jenkins_job_priority: 50
 jenkins_job_timeout: 300
