@@ -89,6 +89,7 @@ distributions:
       nightly-extra-rmw-release: rolling/ci-nightly-extra-rmw-release.yaml
       nightly-fastrtps: rolling/ci-nightly-fastrtps.yaml
       nightly-fastrtps-dynamic: rolling/ci-nightly-fastrtps-dynamic.yaml
+      nightly-gurumdds: rolling/ci-nightly-gurumdds.yaml
       nightly-performance: rolling/ci-nightly-performance.yaml
       nightly-release: rolling/ci-nightly-release.yaml
       overlay: rolling/ci-overlay.yaml
