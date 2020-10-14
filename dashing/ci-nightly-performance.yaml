@@ -105,12 +105,15 @@ targets:
 type: ci-build
 underlay_from_ci_jobs:
 - nightly-extra-rmw-release
-show_images:
-  Performance Test Results:
-  - ws/test_results/buildfarm_perf_tests/performance_test_results_*.png
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_*.png
-  - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_*.png
-  - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_*.png
+archive_files:
+- ws/test_results/buildfarm_perf_tests/overhead_node_test_results_*.csv
+- ws/test_results/buildfarm_perf_tests/overhead_node_test_results_*.png
+- ws/test_results/buildfarm_perf_tests/overhead_test_results_*.csv
+- ws/test_results/buildfarm_perf_tests/overhead_test_results_*.png
+- ws/test_results/buildfarm_perf_tests/performance_test_results_*.csv
+- ws/test_results/buildfarm_perf_tests/performance_test_results_*.png
+- ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_*.csv
+- ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_*.png
 show_plots:
   Node Spinnig Results:
   - title: Node Spinning Virtual Memory
