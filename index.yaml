@@ -100,6 +100,7 @@ distributions:
       - ros2-buildfarm-rolling@googlegroups.com
     release_builds:
       default: rolling/release-build.yaml
+      el: rolling/release-el-build.yaml
       ufv8: rolling/release-focal-arm64-build.yaml
     source_builds:
       default: rolling/source-build.yaml
