@@ -15,39 +15,54 @@ notifications:
   - scott@openrobotics.org
   maintainers: false
 package_blacklist:
+- acado_vendor  # Not yet generated for RHEL
 - async_web_server_cpp  # Not yet generated for RHEL
 - autoware_auto_msgs  # Not yet generated for RHEL
-- bno055  # python3-serial has no RPM package for RHEL
-- can_msgs  # Not yet generated for RHE
-- canopen_402  # Not yet generated for RHE
-- canopen_chain_node  # Not yet generated for RHE
-- canopen_master  # Not yet generated for RHE
-- canopen_motor_node  # Not yet generated for RHE
-- cartographer  # Requires Lua v5.2, system packages v5.1
-- cv_bridge  # Requires OpenCV v3, system packages v2
+- bno055  # Not yet generated for RHEL
+- can_msgs  # Not yet generated for RHEL
+- canopen_402  # Not yet generated for RHEL
+- canopen_chain_node  # Not yet generated for RHEL
+- canopen_master  # Not yet generated for RHEL
+- canopen_motor_node  # Not yet generated for RHEL
+- cartographer  # RPM for ceres-solver is not yet stable
+- control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - gazebo_dev  # Gazebo has no RPM package
+- gps_msgs  # Requires release with bloom >= 0.10.2
 - grbl_msgs  # Not yet generated for RHEL
-- grbl_ros  # python3-serial has no RPM package for RHEL
-- image_tools  # Requires OpenCV v3, system packages v2
+- grbl_ros  # Not yet generated for RHEL
+- ifm3d_core  # pcl-devel has no RPM package for RHEL 8
 - joy_teleop  # Not yet generated for RHEL
 - key_teleop  # Not yet generated for RHEL
+- lgsvl_msgs  # Requires release with bloom >= 0.10.2
+- marti_can_msgs  # Requires release with bloom >= 0.10.2
+- marti_common_msgs  # Requires release with bloom >= 0.10.2
+- marti_dbw_msgs  # Requires release with bloom >= 0.10.2
+- marti_perception_msgs  # Requires release with bloom >= 0.10.2
+- marti_sensor_msgs  # Requires release with bloom >= 0.10.2
+- marti_status_msgs  # Requires release with bloom >= 0.10.2
+- marti_visualization_msgs  # Requires release with bloom >= 0.10.2
 - mouse_teleop  # Not yet generated for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
+- nmea_msgs  # Requires release with bloom >= 0.10.2
+- pcl_conversions  # pcl-devel has no RPM package for RHEL 8
+- phidgets_msgs  # Requires release with bloom >= 0.10.2
 - rc_common_msgs  # Not yet generated for RHEL
 - rc_dynamics_api  # Not yet generated for RHEL
 - rc_genicam_api  # Not yet generated for RHEL
 - rc_genicam_driver  # Not yet generated for RHEL
+- rcl_logging_log4cxx  # RPM for log4cxx-devel is not yet stable
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - ros2trace  # Not yet generated for RHEL
-- ros_canopen  # Not yet generated for RHE
-- sdformat_urdf  # Requires sdformat v9, system packages v2
+- ros_canopen  # Not yet generated for RHEL
+- rviz_assimp_vendor  # RPM for assimp is not yet stable
+- sdformat_test_files  # sdformat has no RPM packages for RHEL 8
+- sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - serial_driver  # Not yet generated for RHEL
-- socketcan_bridge  # Not yet generated for RHE
-- socketcan_interface  # Not yet generated for RHE
+- socketcan_bridge  # Not yet generated for RHEL
+- socketcan_interface  # Not yet generated for RHEL
 - teleop_tools  # Not yet generated for RHEL
 - teleop_tools_msgs  # Not yet generated for RHEL
 - test_osrf_testing_tools_cpp  # Doesn't install anything
-- tracetools  # Not yet generated for RHEL
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - tracetools_launch  # Not yet generated for RHEL
 - tracetools_read  # Not yet generated for RHEL
@@ -72,6 +87,25 @@ package_blacklist:
 - webots_ros2_tutorials  # Not yet generated for RHEL
 - webots_ros2_universal_robot  # Not yet generated for RHEL
 - webots_ros2_ur_e_description  # Not yet generated for RHEL
+- wiimote  # cwiid has not RPM package for RHEL
+package_ignore_list:
+- connext_cmake_module  # No RPM package for Connext
+- demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
+- gurumdds_cmake_module  # No RPM package for GurumDDS
+- rmw_connext_cpp  # No RPM package for Connext
+- rmw_connext_dynamic_cpp  # No RPM package for Connext
+- rmw_connext_shared_cpp  # No RPM package for Connext
+- rmw_connextdds  # No RPM package for Connext
+- rmw_connextddsmicro  # No RPM package for Connext
+- rmw_connextdds_common  # No RPM package for Connext
+- rmw_gurumdds_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_shared_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_static_cpp  # No RPM package for GurumDDS
+- rosidl_typesupport_connext_c  # No RPM package for Connext
+- rosidl_typesupport_connext_cpp  # No RPM package for Connext
+- rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
+- rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rti_connext_dds_cmake_module  # No RPM package for Connext
 sync:
   package_count: 262
 repositories:
@@ -108,12 +142,13 @@ repositories:
     =4Ofr
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/el/building/$releasever/$basearch/
-target_repository: http://repo.ros2.org/el/building
+  - http://repo.ros2.org/rhel/building/$releasever/$basearch/
+target_repository: http://repo.ros2.org/rhel/building
 targets:
   rhel:
-    '7':
+    '8':
       x86_64:
 type: release-build
-upload_credential_id: 0ddb9953-40d3-4922-80be-298086e30370
+upload_credential_id: pulp_admin
+upload_destination_credential_id: pulp_base_url
 version: 2
