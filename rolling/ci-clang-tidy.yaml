@@ -3,7 +3,6 @@
 ---
 build_environment_variables:
   ROS_PYTHON_VERSION: '3'
-  RTI_NC_LICENSE_ACCEPTED: 'yes'
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Debug -DSKIP_MULTI_RMW_TESTS=1 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --no-warn-unused-cli'
 build_tool_test_args: '--ctest-args -L clang_tidy --pytest-args -m clang_tidy'
