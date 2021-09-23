@@ -10,8 +10,8 @@ build_environment_variables:
 build_tool: colcon
 build_tool_args: '--cmake-args --no-warn-unused-cli'
 install_packages:
-- libasio-dev # for FastRTPS
-- libtinyxml2-dev # for FastRTPS
+- libasio-dev  # for FastRTPS
+- libtinyxml2-dev  # for FastRTPS
 - ros-noetic-common-msgs
 - ros-noetic-rosbash
 - ros-noetic-roscpp
