@@ -23,6 +23,7 @@ package_blacklist:
 - cartographer  # RPM for ceres-solver is not yet stable
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - dynamic_edt_3d  # Not yet generated for RHEL
+- four_wheel_steering_msgs # https://github.com/ros-drivers/four_wheel_steering_msgs/pull/7
 - gazebo_dev  # Gazebo has no RPM package
 - grbl_ros  # Not yet generated for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
