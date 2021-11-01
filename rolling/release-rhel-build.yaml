@@ -26,7 +26,7 @@ package_blacklist:
 - gazebo_dev  # Gazebo has no RPM package
 - grbl_ros  # Not yet generated for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
-- joint_state_broadcaster # Build failures on RHEL
+- joint_state_broadcaster  # Build failures on RHEL
 - marti_can_msgs  # Requires release with bloom >= 0.10.2
 - marti_common_msgs  # Requires release with bloom >= 0.10.2
 - marti_dbw_msgs  # Requires release with bloom >= 0.10.2
