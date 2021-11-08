@@ -5,6 +5,7 @@ abi_incompatibility_assumed: true
 
 build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'
+  ROS_VERSION: '2'
 
 jenkins_binary_job_priority: 86
 jenkins_binary_job_timeout: 120
