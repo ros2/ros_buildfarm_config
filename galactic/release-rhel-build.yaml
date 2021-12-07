@@ -27,6 +27,7 @@ package_blacklist:
 - gazebo_dev  # Gazebo has no RPM package
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - libmavconn  # asio has no RPM package for RHEL 8
+- microstrain_inertial_msgs  # Not yet generated for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
 - mrt_cmake_modules  # lcov has no RPM package for RHEL 8
@@ -62,6 +63,10 @@ package_blacklist:
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_building_sim_ignition_plugins  # ignition has no RPM packages for RHEL
+- rmf_demos_assets  # Gazebo has no RPM packages for RHEL
+- rmf_demos_dashboard_resources  # Gazebo has no RPM packages for RHEL
+- rmf_demos_maps  # Gazebo has no RPM packages for RHEL
+- rmf_demos_tasks  # Gazebo has no RPM packages for RHEL
 - rmf_robot_sim_common  # ignition has no RPM packages for RHEL
 - rmf_robot_sim_ignition_plugins  # ignition has no RPM packages for RHEL
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
@@ -74,6 +79,7 @@ package_blacklist:
 - ublox_gps  # asio has no RPM package for RHEL 8
 - usb_cam  # ffmpeg has no RPM package for RHEL
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL 8
+- warehouse_ros_sqlite  # Not yet generated for RHEL
 - webots_ros2  # python-imaging has no RPM package for RHEL 8
 - webots_ros2_abb  # python-imaging has no RPM package for RHEL 8
 - webots_ros2_core  # python-imaging has no RPM package for RHEL 8

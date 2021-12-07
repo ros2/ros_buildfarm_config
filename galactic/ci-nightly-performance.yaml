@@ -15,8 +15,8 @@ benchmark_schema: !include ../common/benchmark_schema.yaml
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_MULTI_RMW_TESTS=1 -DPERFORMANCE_TEST_CYCLONEDDS_ENABLED=1 -DPERFORMANCE_TEST_FASTRTPS_ENABLED=1 --no-warn-unused-cli'
 install_packages:
-- libasio-dev # for FastRTPS
-- libtinyxml2-dev # for FastRTPS
+- libasio-dev  # for FastRTPS
+- libtinyxml2-dev  # for FastRTPS
 - ros-noetic-common-msgs
 - ros-noetic-rosbash
 - ros-noetic-roscpp
