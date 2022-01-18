@@ -42,6 +42,7 @@ package_blacklist:
 - rc_dynamics_api  # Not yet generated for RHEL
 - rmf_robot_sim_common  # Build failures on RHEL https://github.com/open-rmf/rmf_simulation/issues/67
 - rmf_robot_sim_ignition_plugins  # ignition has no RPM packages for RHEL
+- rmf_traffic_ros2  # Build failures on RHEl https://github.com/open-rmf/rmf_ros2/issues/156
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
