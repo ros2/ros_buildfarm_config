@@ -1,0 +1,22 @@
+%YAML 1.1
+---
+name: Run tests
+
+on:  # yamllint disable-line rule:truthy
+  push:
+    branches: ['master', 'production', 'ros2']
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+      with:
+        repository: ros-infrastructure/ros_buildfarm
+        path: ros_buildfarm
+    - name: Validate buildfarm configuration
+      env:
+        PYTHONPATH: ${{github.workspace}}/ros_buildfarm
+      run: ${{github.workspace}}/ros_buildfarm/scripts/misc/validate_config_index.py file://${{github.workspace}}/index.yaml
