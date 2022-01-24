@@ -20,3 +20,9 @@ jobs:
       env:
         PYTHONPATH: ${{github.workspace}}/ros_buildfarm
       run: ${{github.workspace}}/ros_buildfarm/scripts/misc/validate_config_index.py file://${{github.workspace}}/index.yaml
+  yamllint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Validate YAML style
+      run: yamllint .
