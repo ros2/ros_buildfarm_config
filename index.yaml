@@ -22,8 +22,8 @@ distributions:
       overlay: foxy/ci-overlay.yaml
     doc_builds: {}
     notification_emails:
-      - jacob+build.ros2.org@openrobotics.org
-      - ros2-buildfarm-foxy@googlegroups.com
+    - jacob+build.ros2.org@openrobotics.org
+    - ros2-buildfarm-foxy@googlegroups.com
     release_builds:
       default: foxy/release-build.yaml
       # TODO(jacobperron): reenable when focal issues are resolved
@@ -52,8 +52,8 @@ distributions:
       overlay: galactic/ci-overlay.yaml
     doc_builds: {}
     notification_emails:
-      - scott+build.ros2.org@openrobotics.org
-      - ros2-buildfarm-rolling@googlegroups.com
+    - scott+build.ros2.org@openrobotics.org
+    - ros2-buildfarm-rolling@googlegroups.com
     release_builds:
       default: galactic/release-build.yaml
       rhel: galactic/release-rhel-build.yaml
@@ -82,8 +82,8 @@ distributions:
     doc_builds:
       default: rolling/doc-build.yaml
     notification_emails:
-      - steven+build.ros2.org@openrobotics.org
-      - ros2-buildfarm-rolling@googlegroups.com
+    - steven+build.ros2.org@openrobotics.org
+    - ros2-buildfarm-rolling@googlegroups.com
     release_builds:
       default: rolling/release-build.yaml
       rhel: rolling/release-rhel-build.yaml
@@ -92,7 +92,7 @@ distributions:
       default: rolling/source-build.yaml
 jenkins_url: https://build.ros2.org
 notification_emails:
-  - steven+build.ros2.org@openrobotics.org
+- steven+build.ros2.org@openrobotics.org
 prerequisites:
   debian_repositories:
   - http://repo.ros2.org/ubuntu/building
@@ -163,12 +163,12 @@ prerequisites:
 rosdistro_index_url: https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml
 status_page_repositories:
   default:
-    - http://repo.ros2.org/ubuntu/building
-    - http://repo.ros2.org/ubuntu/testing
-    - http://repo.ros2.org/ubuntu/main
+  - http://repo.ros2.org/ubuntu/building
+  - http://repo.ros2.org/ubuntu/testing
+  - http://repo.ros2.org/ubuntu/main
   rhel:
-    - http://repo.ros2.org/rhel/building
-    - http://repo.ros2.org/rhel/testing
-    - http://repo.ros2.org/rhel/main
+  - http://repo.ros2.org/rhel/building
+  - http://repo.ros2.org/rhel/testing
+  - http://repo.ros2.org/rhel/main
 type: buildfarm
 version: 1
