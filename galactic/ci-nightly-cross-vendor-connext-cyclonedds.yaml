@@ -11,9 +11,6 @@ build_environment_variables:
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TESTS=1 --no-warn-unused-cli'
 build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
-install_packages:
-- libssl-dev  # for Connext and CycloneDDS
-- libtinyxml2-dev  # for FastRTPS, even though disabled it is needed for the typesupport
 jenkins_job_label: ci-agent
 jenkins_job_priority: 56
 jenkins_job_timeout: 300

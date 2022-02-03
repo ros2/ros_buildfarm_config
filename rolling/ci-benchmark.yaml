@@ -15,10 +15,6 @@ build_tool: colcon
 build_tool_args: '--cmake-args -DAMENT_RUN_PERFORMANCE_TESTS=ON -DCMAKE_BUILD_TYPE=Release --no-warn-unused-cli'
 build_tool_test_args: '--ctest-args -L performance --pytest-args -m performance'
 install_packages:
-- default-jdk  # for CycloneDDS
-- libasio-dev  # for FastRTPS
-- libtinyxml2-dev  # for FastRTPS
-- maven  # for CycloneDDS
 - ros-noetic-common-msgs
 - ros-noetic-rosbash
 - ros-noetic-roscpp
