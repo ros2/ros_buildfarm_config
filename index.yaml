@@ -53,7 +53,7 @@ distributions:
     doc_builds: {}
     notification_emails:
     - scott+build.ros2.org@openrobotics.org
-    - ros2-buildfarm-rolling@googlegroups.com
+    - ros2-buildfarm-galactic@googlegroups.com
     release_builds:
       default: galactic/release-build.yaml
       rhel: galactic/release-rhel-build.yaml
