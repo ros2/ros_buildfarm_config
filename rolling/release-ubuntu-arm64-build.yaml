@@ -2,7 +2,7 @@
 # ROS buildfarm release-build file
 ---
 abi_incompatibility_assumed: true
-jenkins_binary_job_label: buildagent_arm64 || rolling_binarydeb_ubv8
+jenkins_binary_job_label: buildagent_arm64 || rolling_binarydeb_ujv8
 jenkins_binary_job_priority: 80
 jenkins_binary_job_timeout: 720
 jenkins_source_job_priority: 70
@@ -53,7 +53,7 @@ repositories:
 target_repository: http://repo.ros2.org/ubuntu/building
 targets:
   ubuntu:
-    focal:
+    jammy:
       arm64:
 type: release-build
 upload_credential_id: jenkins-agent
