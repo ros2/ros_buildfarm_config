@@ -24,11 +24,15 @@ package_blacklist:
 - dwb_critics  # lcov has no RPM package for RHEL 8
 - dwb_msgs  # lcov has no RPM package for RHEL 8
 - dwb_plugins  # lcov has no RPM package for RHEL 8
+- four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - ign_rviz_common  # ignition has no RPM packages for RHEL
+- io_context  # asio has no RPM package for RHEL 8
 - libmavconn  # asio has no RPM package for RHEL 8
 - microstrain_inertial_msgs  # Not yet generated for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
+- moveit_configs_utils  # libogre-dev has no RPM package for RHEL
+- moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
 - mrt_cmake_modules  # lcov has no RPM package for RHEL 8
 - nav2_amcl  # lcov has no RPM package for RHEL 8
