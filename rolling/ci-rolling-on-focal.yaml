@@ -4,8 +4,8 @@
 build_environment_variables:
   ROS_PYTHON_VERSION: '3'
 build_tool: colcon
-build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_MULTI_RMW_TESTS=1 --no-warn-unused-cli'
-build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE "(linter|performance|xfail| placeholder-with-space )" --pytest-args -m "not linter and not performance and not xfail"'
+build_tool_args: '--merge-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_MULTI_RMW_TESTS=1 --no-warn-unused-cli'
+build_tool_test_args: '--merge-install --retest-until-pass 2 --ctest-args -LE "(linter|performance|xfail| placeholder-with-space )" --pytest-args -m "not linter and not performance and not xfail"'
 install_packages:
 - python3-colcon-bash
 jenkins_job_label: ci-agent
