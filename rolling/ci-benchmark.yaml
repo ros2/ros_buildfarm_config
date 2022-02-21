@@ -2,10 +2,7 @@
 # ROS buildfarm ci-build file
 ---
 build_environment_variables:
-  CMAKE_PREFIX_PATH: '/opt/ros/noetic:$CMAKE_PREFIX_PATH'
-  LD_LIBRARY_PATH: '/opt/ros/noetic/lib:$LD_LIBRARY_PATH'
   NDDSHOME: '/opt/rti.com/rti_connext_dds-5.3.1'
-  PYTHONPATH: '/opt/ros/noetic/lib/python3/dist-packages:$PYTHONPATH'
   ROS_PYTHON_VERSION: '3'
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 benchmark_patterns:
@@ -14,15 +11,6 @@ benchmark_schema: !include ../common/benchmark_schema.yaml
 build_tool: colcon
 build_tool_args: '--cmake-args -DAMENT_RUN_PERFORMANCE_TESTS=ON -DCMAKE_BUILD_TYPE=Release --no-warn-unused-cli'
 build_tool_test_args: '--ctest-args -L performance --pytest-args -m performance'
-install_packages:
-- ros-noetic-common-msgs
-- ros-noetic-rosbash
-- ros-noetic-roscpp
-- ros-noetic-roscpp-tutorials
-- ros-noetic-roslaunch
-- ros-noetic-rosmsg
-- ros-noetic-rospy-tutorials
-- ros-noetic-tf2-msgs
 jenkins_job_label: ci-agent
 jenkins_job_priority: 50
 jenkins_job_timeout: 240
