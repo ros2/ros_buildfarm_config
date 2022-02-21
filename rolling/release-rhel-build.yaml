@@ -16,14 +16,10 @@ notifications:
   maintainers: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
-- async_web_server_cpp  # Not yet generated for RHEL
-- backward_ros  # Not yet generated for RHEL
-- bno055  # Not yet generated for RHEL
 - bosch_locator_bridge  # libpoco-dev has no RPM package for RHEL 8
 - cartographer  # RPM for ceres-solver is not yet stable
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
-- dynamic_edt_3d  # Not yet generated for RHEL
-- four_wheel_steering_msgs  # https://github.com/ros-drivers/four_wheel_steering_msgs/pull/7
+- four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_rviz_common  # ignition has no RPM packages for RHEL
@@ -37,11 +33,10 @@ package_blacklist:
 - mrpt2  # ffmpeg has no RPM package in supported repositories
 - mrt_cmake_modules  # lcov has no RPM package for RHEL 8
 - ntpd_driver  # libpoco-dev has no RPM package for RHEL 8
-- octomap  # Not yet generated for RHEL
-- octovis  # Not yet generated for RHEL
+- octomap_rviz_plugins  # Build failures on RHEL
+- octomap_server  # Build failures on RHEL
+- octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
-- random_numbers  # Not yet generated for RHEL
-- rc_dynamics_api  # Not yet generated for RHEL
 - rmf_demos_maps  # Build failures on RHEL https://github.com/open-rmf/rmf_demos/issues/119
 - rmf_robot_sim_common  # Build failures on RHEL https://github.com/open-rmf/rmf_simulation/issues/67
 - rmf_robot_sim_ignition_plugins  # ignition has no RPM packages for RHEL
@@ -56,7 +51,6 @@ package_blacklist:
 - ublox_gps  # asio has no RPM package for RHEL 8
 - usb_cam  # ffmpeg has no RPM package for RHEL
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL
-- warehouse_ros_sqlite  # Not yet generated for RHEL
 - webots_ros2  # Not yet generated for RHEL
 - webots_ros2_abb  # Not yet generated for RHEL
 - webots_ros2_core  # Not yet generated for RHEL
