@@ -80,7 +80,6 @@ distributions:
       nightly-performance: rolling/ci-nightly-performance.yaml
       nightly-release: rolling/ci-nightly-release.yaml
       overlay: rolling/ci-overlay.yaml
-      rolling-on-focal: rolling/ci-rolling-on-focal.yaml
     doc_builds:
       default: rolling/doc-build.yaml
     notification_emails:
