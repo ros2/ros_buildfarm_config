@@ -26,6 +26,7 @@ package_blacklist:
 - dwb_plugins  # lcov has no RPM package for RHEL 8
 - four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
+- ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
 - libmavconn  # asio has no RPM package for RHEL 8
