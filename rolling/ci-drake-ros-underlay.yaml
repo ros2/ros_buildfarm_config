@@ -17,10 +17,11 @@ jenkins_job_weight: 4
 package_dependencies: true
 package_names:
 - ament_cmake_clang_format
+- ament_cmake_pycodestyle
 - cv_bridge
 - ros_base
 - rviz2
-package_selection_args: '--packages-ignore rmw_fastrtps_dynamic_cpp --packages-ignore-regex .*connext.* .*fastrtps.* .*fastcdr.* .*foonathan.*'
+package_selection_args: '--packages-ignore rmw_fastrtps_dynamic_cpp --packages-ignore-regex .*connext.* .*cyclone.* .*iceoryx.*'
 repositories:
   keys:
   - |
