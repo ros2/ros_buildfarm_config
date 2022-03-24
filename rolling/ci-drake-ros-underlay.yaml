@@ -21,7 +21,7 @@ package_names:
 - cv_bridge
 - ros_base
 - rviz2
-package_selection_args: '--packages-ignore rmw_fastrtps_dynamic_cpp --packages-ignore-regex .*connext.* .*cyclone.* .*iceoryx.*'
+package_selection_args: '--packages-ignore-regex .*connext.* .*fastcdr.* .*fastrtps.* .*foonathan.*'
 repositories:
   keys:
   - |
