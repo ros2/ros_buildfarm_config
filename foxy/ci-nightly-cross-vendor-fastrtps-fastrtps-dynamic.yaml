@@ -7,6 +7,8 @@ build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'  # even thought not used installed for the underlay
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TESTS=1 --no-warn-unused-cli'
+install_packages:
+- libssl-dev  # for Fast-DDS security
 jenkins_job_label: ci-agent
 jenkins_job_priority: 57
 jenkins_job_timeout: 300
