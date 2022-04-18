@@ -13,6 +13,7 @@ build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TEST
 build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
 install_packages:
 - libssl-dev  # for Fast-DDS security
+- libtinyxml2-dev  # for Fast-DDS, which doesn't install its manifest
 jenkins_job_label: ci-agent
 jenkins_job_priority: 56
 jenkins_job_timeout: 300

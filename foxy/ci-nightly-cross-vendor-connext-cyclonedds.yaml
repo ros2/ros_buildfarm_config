@@ -13,6 +13,7 @@ build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_SINGLE_RMW_TEST
 install_packages:
 - default-jdk  # for CycloneDDS
 - libssl-dev  # for Fast-DDS security
+- libtinyxml2-dev  # for Fast-DDS, which doesn't install its manifest
 - maven  # for CycloneDDS
 jenkins_job_label: ci-agent
 jenkins_job_priority: 57
