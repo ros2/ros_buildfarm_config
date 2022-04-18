@@ -2,15 +2,15 @@
 # ROS buildfarm release-build file
 ---
 abi_incompatibility_assumed: true
-jenkins_binary_job_label: buildagent_arm64 || rolling_binarydeb_ujv8
-jenkins_binary_job_priority: 80
+jenkins_binary_job_label: buildagent_arm64 || humble_binarydeb_ujv8
+jenkins_binary_job_priority: 85
 jenkins_binary_job_timeout: 720
-jenkins_source_job_priority: 70
+jenkins_source_job_priority: 75
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - audrow+build.ros2.org@openrobotics.org
+  - ros2-buildfarm-humble@googlegroups.com
   maintainers: true
 sync:
   package_count: 499

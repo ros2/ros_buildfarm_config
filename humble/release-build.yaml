@@ -12,8 +12,8 @@ jenkins_source_job_priority: 70
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - audrow+build.ros2.org@openrobotics.org
+  - ros2-buildfarm-humble@googlegroups.com
   maintainers: true
 sync:
   package_count: 499
