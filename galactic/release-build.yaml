@@ -8,7 +8,7 @@ build_environment_variables:
 
 jenkins_binary_job_priority: 86
 jenkins_binary_job_timeout: 120
-jenkins_source_job_priority: 70
+jenkins_source_job_priority: 76
 jenkins_source_job_timeout: 30
 notifications:
   emails:
