@@ -60,6 +60,11 @@ distributions:
       ufv8: galactic/release-focal-arm64-build.yaml
     source_builds:
       default: galactic/source-build.yaml
+  humble:
+    release_builds:
+      default: humble/release-build.yaml
+      rhel: humble/release-rhel-build.yaml
+      ujv8: humble/release-ubuntu-arm64-build.yaml
   rolling:
     ci_builds:
       benchmark: rolling/ci-benchmark.yaml
