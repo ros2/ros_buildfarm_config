@@ -10,6 +10,8 @@ benchmark_patterns:
 benchmark_schema: !include ../common/benchmark_schema.yaml
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release -DSKIP_MULTI_RMW_TESTS=1 -DPERFORMANCE_TEST_CYCLONEDDS_ENABLED=1 -DPERFORMANCE_TEST_FASTRTPS_ENABLED=1 --no-warn-unused-cli'
+install_packages:
+- libssl-dev  # for Fast-DDS security
 jenkins_job_label: ci-agent
 jenkins_job_priority: 50
 jenkins_job_timeout: 180
