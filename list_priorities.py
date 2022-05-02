@@ -7,13 +7,25 @@ import yaml
 import yamlinclude
 
 
-DIRECTORIES = ['foxy', 'galactic', 'humble', 'rolling']
-
 def main():
     base_path = os.path.dirname(__file__)
+
+    # First parse the index.yaml to find the list of distributions that we
+    # should parse.
+
+    yamlinclude.YamlIncludeConstructor.add_to_loader_class(loader_class=yaml.FullLoader, base_dir=base_path)
+    with open(os.path.join(base_path, 'index.yaml')) as infp:
+        index_data = yaml.load(infp, Loader=yaml.FullLoader)
+
+    directories = []
+    for distro in index_data['distributions'].keys():
+        directories.append(distro)
+
+    del yaml.FullLoader.yaml_constructors[yamlinclude.YamlIncludeConstructor.DEFAULT_TAG_NAME]
+
     priorities = {}
 
-    for directory in DIRECTORIES:
+    for directory in directories:
         current_path = os.path.join(base_path, directory)
         yamlinclude.YamlIncludeConstructor.add_to_loader_class(loader_class=yaml.FullLoader, base_dir=current_path)
 
