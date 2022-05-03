@@ -61,10 +61,34 @@ distributions:
     source_builds:
       default: galactic/source-build.yaml
   humble:
+    ci_builds:
+      benchmark: humble/ci-benchmark.yaml
+      nightly-connext: humble/ci-nightly-connext.yaml
+      nightly-cross-vendor-connext-cyclonedds: humble/ci-nightly-cross-vendor-connext-cyclonedds.yaml
+      nightly-cross-vendor-connext-fastrtps: humble/ci-nightly-cross-vendor-connext-fastrtps.yaml
+      nightly-cross-vendor-connext-fastrtps-dynamic: humble/ci-nightly-cross-vendor-connext-fastrtps-dynamic.yaml
+      nightly-cross-vendor-cyclonedds-fastrtps: humble/ci-nightly-cross-vendor-cyclonedds-fastrtps.yaml
+      nightly-cross-vendor-cyclonedds-fastrtps-dynamic: humble/ci-nightly-cross-vendor-cyclonedds-fastrtps-dynamic.yaml
+      nightly-cross-vendor-fastrtps-fastrtps-dynamic: humble/ci-nightly-cross-vendor-fastrtps-fastrtps-dynamic.yaml
+      nightly-cyclonedds: humble/ci-nightly-cyclonedds.yaml
+      nightly-debug: humble/ci-nightly-debug.yaml
+      nightly-extra-rmw-release: humble/ci-nightly-extra-rmw-release.yaml
+      nightly-fastrtps: humble/ci-nightly-fastrtps.yaml
+      nightly-fastrtps-dynamic: humble/ci-nightly-fastrtps-dynamic.yaml
+      nightly-performance: humble/ci-nightly-performance.yaml
+      nightly-release: humble/ci-nightly-release.yaml
+      overlay: humble/ci-overlay.yaml
+    doc_builds:
+      default: humble/doc-build.yaml
+    notification_emails:
+    - audrow+build.ros2.org@openrobotics.org
+    - ros2-buildfarm-humble@googlegroups.com
     release_builds:
       default: humble/release-build.yaml
       rhel: humble/release-rhel-build.yaml
       ujv8: humble/release-ubuntu-arm64-build.yaml
+    source_builds:
+      default: humble/source-build.yaml
   rolling:
     ci_builds:
       benchmark: rolling/ci-benchmark.yaml
