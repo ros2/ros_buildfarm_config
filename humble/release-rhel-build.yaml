@@ -17,17 +17,16 @@ notifications:
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - bosch_locator_bridge  # libpoco-dev has no RPM package for RHEL 8
-- cartographer  # RPM for ceres-solver is not yet stable
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
+- gazebo_msgs  # Gazebo has no RPM package
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
 - joint_state_broadcaster  # Build failures on RHEL
 - laser_filters  # Build failures on RHEL https://github.com/ros-perception/laser_filters/issues/150
 - libmavconn  # asio has no RPM package for RHEL 8
-- microstrain_inertial_msgs  # Not yet generated for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories

@@ -17,7 +17,7 @@ notifications:
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - backward_ros  # Not yet generated for RHEL
-- cartographer  # RPM for ceres-solver is not yet stable
+- cartographer  # Build failures on RHEL
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
 - costmap_queue  # lcov has no RPM package for RHEL 8
 - dwb_core  # lcov has no RPM package for RHEL 8
@@ -29,8 +29,11 @@ package_blacklist:
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
+- irobot_create_control  # ignition has no RPM packages for RHEL
+- irobot_create_description  # ignition has no RPM packages for RHEL
+- irobot_create_ignition_plugins  # ignition has no RPM packages for RHEL
+- irobot_create_toolbox  # ignition has no RPM packages for RHEL
 - libmavconn  # asio has no RPM package for RHEL 8
-- microstrain_inertial_msgs  # Not yet generated for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_configs_utils  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
@@ -81,6 +84,7 @@ package_blacklist:
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
+- turtlebot4_ignition_gui_plugins  # ignition has no RPM packages for RHEL
 - ublox_gps  # asio has no RPM package for RHEL 8
 - usb_cam  # ffmpeg has no RPM package for RHEL
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL 8
