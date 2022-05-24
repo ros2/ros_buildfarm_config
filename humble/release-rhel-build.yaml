@@ -48,6 +48,10 @@ package_blacklist:
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
+- swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
+- swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
+- swri_prefix_tools  # Fix is merged but unreleased. https://github.com/swri-robotics/marti_common/pull/665
+- swri_roscpp  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - ublox_gps  # asio has no RPM package for RHEL 8
 - usb_cam  # ffmpeg has no RPM package for RHEL
