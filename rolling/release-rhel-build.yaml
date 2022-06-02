@@ -37,6 +37,7 @@ package_blacklist:
 - octomap_server  # Build failures on RHEL
 - octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
+- open3d_conversions  # open3d has no RPM package for RHEL
 - ros2_ouster  # libtins-dev has no RPM package for RHEL
 - rmf_demos_maps  # Build failures on RHEL https://github.com/open-rmf/rmf_demos/issues/119
 - rmf_robot_sim_common  # Build failures on RHEL https://github.com/open-rmf/rmf_simulation/issues/67
