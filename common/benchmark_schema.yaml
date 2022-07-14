@@ -1,6 +1,6 @@
 %YAML 1.1
 # This JSON schema was taken from:
-# https://github.com/ament/ament_cmake/blob/master/ament_cmake_google_benchmark/doc/benchmark_schema.json
+# https://github.com/ament/ament_cmake/blob/rolling/ament_cmake_google_benchmark/doc/benchmark_schema.json
 ---
 |
   {
