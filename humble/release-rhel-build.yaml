@@ -12,7 +12,7 @@ jenkins_source_job_priority: 75
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - scott@openrobotics.org
+  - scott+build.ros2.org@openrobotics.org
   maintainers: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
