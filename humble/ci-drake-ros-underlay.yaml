@@ -21,6 +21,7 @@ package_names:
 - cv_bridge
 - ros_base
 - rviz2
+- xacro
 package_selection_args: '--packages-ignore-regex .*connext.* .*fastcdr.* .*fastrtps.* .*foonathan.*'
 repositories:
   keys:
