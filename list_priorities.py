@@ -17,9 +17,7 @@ def main():
     with open(os.path.join(base_path, 'index.yaml')) as infp:
         index_data = yaml.load(infp, Loader=yaml.FullLoader)
 
-    directories = []
-    for distro in index_data['distributions'].keys():
-        directories.append(distro)
+    directories = list(index_data['distributions'].keys())
 
     del yaml.FullLoader.yaml_constructors[yamlinclude.YamlIncludeConstructor.DEFAULT_TAG_NAME]
 
