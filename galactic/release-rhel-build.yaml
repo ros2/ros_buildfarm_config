@@ -165,5 +165,7 @@ targets:
       x86_64:
 type: release-build
 upload_credential_id: jenkins-agent
-upload_destination_credential_id: upload_host
+upload_credential_id_pulp: pulp_admin
+upload_destination_credential_id: pulp_base_url
+upload_host: repo.ros2.org
 version: 2
