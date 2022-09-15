@@ -16,11 +16,13 @@ jenkins_job_timeout: 300
 jenkins_job_weight: 4
 package_dependencies: true
 package_names:
+- action_msgs
 - ament_cmake_clang_format
 - ament_cmake_pycodestyle
 - cv_bridge
 - ros_base
 - rviz2
+- unique_identifier_msgs
 - xacro
 package_selection_args: '--packages-ignore-regex .*connext.* .*fastcdr.* .*fastrtps.* .*foonathan.*'
 repositories:
