@@ -21,6 +21,7 @@ package_blacklist:
 - four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
+- ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
 - joint_state_broadcaster  # Build failures on RHEL
@@ -36,7 +37,9 @@ package_blacklist:
 - octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
 - open3d_conversions  # open3d has no RPM package for RHEL
-- ros2_ouster  # libtins-dev has no RPM package for RHEL
+- ouster_msgs  # libtins-dev has no RPM package for RHEL
+- rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
+- rcgcrd_spl_4  # python3-construct has no RPM for RHEL 8
 - rmf_demos_maps  # Build failures on RHEL https://github.com/open-rmf/rmf_demos/issues/119
 - rmf_robot_sim_common  # Build failures on RHEL https://github.com/open-rmf/rmf_simulation/issues/67
 - rmf_robot_sim_ignition_plugins  # ignition has no RPM packages for RHEL
@@ -45,6 +48,7 @@ package_blacklist:
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
+- splsm_7  # python3-construct has no RPM package for RHEL 8
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665

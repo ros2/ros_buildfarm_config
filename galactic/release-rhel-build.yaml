@@ -16,6 +16,7 @@ notifications:
   maintainers: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
+- ament_black  # black has no RPM packages for RHEL
 - backward_ros  # Not yet generated for RHEL
 - cartographer  # Build failures on RHEL
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
@@ -34,6 +35,7 @@ package_blacklist:
 - irobot_create_ignition_plugins  # ignition has no RPM packages for RHEL
 - irobot_create_toolbox  # ignition has no RPM packages for RHEL
 - libmavconn  # asio has no RPM package for RHEL 8
+- log_view  # Not yet generated for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_configs_utils  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
@@ -69,6 +71,8 @@ package_blacklist:
 - octomap  # libqglviewer-dev-qt5 has no RPM for RHEL
 - ompl  # opende has no RPM package for RHEL
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
+- rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
+- rcgcrd_spl_4  # python3-construct has no RPM for RHEL 8
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_building_sim_ignition_plugins  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # Gazebo has no RPM packages for RHEL
@@ -83,6 +87,8 @@ package_blacklist:
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
+- slider_publisher  # Not yet generated for RHEL
+- splsm_7  # python3-construct has no RPM package for RHEL 8
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - turtlebot4_ignition_gui_plugins  # ignition has no RPM packages for RHEL
 - ublox_gps  # asio has no RPM package for RHEL 8
