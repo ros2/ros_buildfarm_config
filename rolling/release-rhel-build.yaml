@@ -37,14 +37,22 @@ package_blacklist:
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
 - rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
 - rcgcrd_spl_4  # python3-construct has no RPM for RHEL 8
-- rmf_demos_maps  # Build failures on RHEL https://github.com/open-rmf/rmf_demos/issues/119
-- rmf_robot_sim_common  # Build failures on RHEL https://github.com/open-rmf/rmf_simulation/issues/67
-- rmf_robot_sim_ignition_plugins  # ignition has no RPM packages for RHEL
+- rmf_building_map_tools  # ignition has no RPM packages for RHEL
+- rmf_building_sim_common  # ignition has no RPM packages for RHEL
+- rmf_demos_assets  # ignition has no RPM packages for RHEL
+- rmf_demos_dashboard_resources  # ignition has no RPM packages for RHEL
+- rmf_demos_maps  # ignition has no RPM packages for RHEL
+- rmf_demos_panel  # ignition has no RPM packages for RHEL
+- rmf_demos_tasks  # ignition has no RPM packages for RHEL
+- rmf_robot_sim_common  # ignition has no RPM packages for RHEL
+- rmf_traffic_editor  # ignition has no RPM packages for RHEL
+- rmf_traffic_editor_assets  # ignition has no RPM packages for RHEL
 - rmf_traffic_ros2  # Build failures on RHEl https://github.com/open-rmf/rmf_ros2/issues/156
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
+- rsl  # Not yet generated for RHEL
 - splsm_7  # python3-construct has no RPM package for RHEL 8
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8

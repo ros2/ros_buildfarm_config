@@ -35,6 +35,7 @@ package_blacklist:
 - moveit_configs_utils  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
+- mrt_cmake_modules  # Not yet generated for RHEL
 - ntpd_driver  # libpoco-dev has no RPM package for RHEL 8
 - ompl  # opende has no RPM package for RHEL
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
