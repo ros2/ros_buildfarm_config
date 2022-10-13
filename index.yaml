@@ -22,13 +22,10 @@ distributions:
       overlay: foxy/ci-overlay.yaml
     doc_builds: {}
     notification_emails:
-    - jacob+build.ros2.org@openrobotics.org
+    - dharini+build.ros2.org@openrobotics.org
     - ros2-buildfarm-foxy@googlegroups.com
     release_builds:
       default: foxy/release-build.yaml
-      # TODO(jacobperron): reenable when focal issues are resolved
-      # See: https://github.com/osrf/multiarch-docker-image-generation/issues/38
-      # ubhf: foxy/release-focal-armhf-build.yaml
       ubv8: foxy/release-focal-arm64-build.yaml
     source_builds:
       default: foxy/source-build.yaml

@@ -12,7 +12,7 @@ jenkins_source_job_priority: 77
 jenkins_source_job_timeout: 30
 notifications:
   emails:
-  - jacob+build.ros2.org@openrobotics.org
+  - dharini+build.ros2.org@openrobotics.org
   - ros2-buildfarm-foxy@googlegroups.com
   maintainers: true
 sync:
