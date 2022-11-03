@@ -31,6 +31,7 @@ package_blacklist:
 - irobot_create_toolbox  # ignition has no RPM packages for RHEL
 - libmavconn  # asio has no RPM package for RHEL 8
 - log_view  # Not yet generated for RHEL
+- massrobotics_amr_sender  # python3-websockets has no RPM package for RHEL 8
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_configs_utils  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
@@ -55,12 +56,13 @@ package_blacklist:
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
-- slider_publisher  # Not yet generated for RHEL
 - splsm_7  # python3-construct has no RPM package for RHEL 8
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - turtlebot4_ignition_gui_plugins  # ignition has no RPM packages for RHEL
 - ublox_gps  # asio has no RPM package for RHEL 8
 - usb_cam  # ffmpeg has no RPM package for RHEL
+- vda5050_msgs  # python3-websockets has no RPM package for RHEL 8
+- vda5050_serializer  # python3-websockets has no RPM package for RHEL 8
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL 8
 - warehouse_ros_sqlite  # Not yet generated for RHEL
 - webots_ros2  # python-imaging has no RPM package for RHEL 8
