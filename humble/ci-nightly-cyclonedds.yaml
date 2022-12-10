@@ -54,4 +54,5 @@ targets:
     jammy:
       amd64:
 type: ci-build
+upload_directory: nightly-cyclonedds
 version: 1
