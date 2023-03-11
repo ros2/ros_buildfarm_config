@@ -35,6 +35,7 @@ package_blacklist:
 - octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
 - open3d_conversions  # open3d has no RPM package for RHEL
+- openni2_camera  # libopenni2-dev does not exist on RHEL
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
 - rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
