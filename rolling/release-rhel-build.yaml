@@ -36,8 +36,6 @@ package_blacklist:
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
-- rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
-- rcgcrd_spl_4  # python3-construct has no RPM for RHEL 8
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # ignition has no RPM packages for RHEL
@@ -53,8 +51,7 @@ package_blacklist:
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
-- rsl  # Not yet generated for RHEL
-- splsm_7  # python3-construct has no RPM package for RHEL 8
+- rsl  # Requires CMake 3.22
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
