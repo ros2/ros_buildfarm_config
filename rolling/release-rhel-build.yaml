@@ -93,6 +93,7 @@ package_ignore_list:
 - rosidl_typesupport_connext_cpp  # No RPM package for Connext
 - rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
 - rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rqt_plot  # python3-matplotlib has no RPM for RHEL 9
 - rti_connext_dds_cmake_module  # No RPM package for Connext
 sync:
   package_count: 400
