@@ -20,6 +20,7 @@ package_blacklist:
 - apex_containers  # Build failures on RHEL due to -Werror
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - four_wheel_steering_msgs  # Requires unreleased changes
+- fuse_constraints  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - geometric_shapes  # assimp has no RPM packages for RHEL 9
 - hpp-fcl  # assimp has no RPM packages for RHEL 9
@@ -27,9 +28,12 @@ package_blacklist:
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - kobuki_core  # Build failures on RHEL
+- kobuki_velocity_smoother  # python3-matplotlib has no RPM package for RHEL 9
+- mavros  # GeographicLib has no RPM packages for RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
+- mrt_cmake_modules  # Build failes due to ambiguous Python shebang
 - octomap_rviz_plugins  # Build failures on RHEL
 - octomap_server  # Build failures on RHEL
 - octovis  # Build failures on RHEL
@@ -37,8 +41,10 @@ package_blacklist:
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
+- performance_test  # Missing dependency on git: https://gitlab.com/ApexAI/performance_test/-/merge_requests/371
 - proxsuite  # simde and matio have no RPM packages for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
+- rig_reconfigure  # Missing dependency on git: https://github.com/teamspatzenhirn/rig_reconfigure/pull/10
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # ignition has no RPM packages for RHEL
@@ -50,6 +56,7 @@ package_blacklist:
 - rmf_traffic_editor  # ignition has no RPM packages for RHEL
 - rmf_traffic_editor_assets  # ignition has no RPM packages for RHEL
 - rmf_traffic_ros2  # Build failures on RHEL https://github.com/open-rmf/rmf_ros2/issues/156
+- robot_localization  # GeographicLib has no RPM packages for RHEL 9
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
@@ -58,11 +65,13 @@ package_blacklist:
 - rsl  # Requires CMake 3.22
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 9
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 9
+- sol_vendor  # Targets 'HEAD' in vendor package
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_prefix_tools  # Fix is merged but unreleased. https://github.com/swri-robotics/marti_common/pull/665
 - swri_roscpp  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
+- turbojpeg_compressed_image_transport  # rosdep rule error: https://github.com/ros/rosdistro/pull/36749
 - tvm_vendor  # Build failures on AlmaLinux (but not RHEL)
 - ur_dashboard_msgs  # docker.io has no RPM packages for RHEL
 - urdfdom_py  # Build failures on RHEL https://github.com/ros/urdf_parser_py/pull/78
@@ -83,6 +92,7 @@ package_blacklist:
 - webots_ros2_universal_robot  # Not yet generated for RHEL
 - webots_ros2_ur_e_description  # Not yet generated for RHEL
 - wiimote  # cwiid has no RPM package for RHEL
+- zmqpp_vendor  # Targets 'HEAD' in vendor package
 package_ignore_list:
 - connext_cmake_module  # No RPM package for Connext
 - demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
