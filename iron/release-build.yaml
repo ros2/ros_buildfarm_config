@@ -8,8 +8,8 @@ build_environment_variables:
 
 jenkins_binary_job_priority: 84
 jenkins_binary_job_timeout: 120
-jenkins_source_job_priority: 70
-jenkins_source_job_timeout: 74
+jenkins_source_job_priority: 74
+jenkins_source_job_timeout: 30
 notifications:
   emails:
   - yadunund+build.ros2.org@openrobotics.org
