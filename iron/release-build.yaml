@@ -6,15 +6,17 @@ abi_incompatibility_assumed: true
 build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 
-jenkins_binary_job_priority: 80
+jenkins_binary_job_priority: 84
 jenkins_binary_job_timeout: 120
 jenkins_source_job_priority: 70
-jenkins_source_job_timeout: 30
+jenkins_source_job_timeout: 74
 notifications:
   emails:
   - steven+build.ros2.org@openrobotics.org
   - ros2-buildfarm-iron@googlegroups.com
   maintainers: true
+package_dependency_behavior:
+  include_test_dependencies: false
 package_blacklist:
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665

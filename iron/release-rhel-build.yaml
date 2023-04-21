@@ -6,14 +6,16 @@ abi_incompatibility_assumed: true
 build_environment_variables:
   RPM_BUILD_NCPUS: '1'
 
-jenkins_binary_job_priority: 80
+jenkins_binary_job_priority: 84
 jenkins_binary_job_timeout: 120
-jenkins_source_job_priority: 70
+jenkins_source_job_priority: 74
 jenkins_source_job_timeout: 30
 notifications:
   emails:
   - scott+build.ros2.org@openrobotics.org
   maintainers: false
+package_dependency_behavior:
+  include_test_dependencies: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3

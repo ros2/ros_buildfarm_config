@@ -77,6 +77,17 @@ distributions:
       nightly-performance: iron/ci-nightly-performance.yaml
       nightly-release: iron/ci-nightly-release.yaml
       overlay: iron/ci-overlay.yaml
+    doc_builds:
+      default: iron/doc-build.yaml
+    notification_emails:
+    - yadunund+build.ros2.org@openrobotics.org
+    - ros2-buildfarm-iron@googlegroups.com
+    release_builds:
+      default: iron/release-build.yaml
+      rhel: iron/release-rhel-build.yaml
+      ujv8: iron/release-ubuntu-arm64-build.yaml
+    source_builds:
+      default: iron/source-build.yaml
   rolling:
     ci_builds:
       benchmark: rolling/ci-benchmark.yaml
