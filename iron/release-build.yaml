@@ -17,10 +17,6 @@ notifications:
   maintainers: true
 package_dependency_behavior:
   include_test_dependencies: false
-package_blacklist:
-- swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
-- swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
-- swri_roscpp  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 sync:
   package_count: 499
   packages: [desktop]
