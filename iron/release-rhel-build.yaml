@@ -15,7 +15,7 @@ notifications:
   - yadunund+build.ros2.org@openrobotics.org
   maintainers: false
 package_dependency_behavior:
-  include_test_dependencies: false
+  run_package_tests: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3

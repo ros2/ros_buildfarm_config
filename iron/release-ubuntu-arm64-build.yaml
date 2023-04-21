@@ -13,7 +13,7 @@ notifications:
   - ros2-buildfarm-iron@googlegroups.com
   maintainers: true
 package_dependency_behavior:
-  include_test_dependencies: false
+  run_package_tests: false
 sync:
   package_count: 499
   packages: [desktop]
