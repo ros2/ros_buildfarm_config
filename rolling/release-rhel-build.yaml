@@ -73,7 +73,6 @@ package_blacklist:
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - tvm_vendor  # Build failures on AlmaLinux (but not RHEL)
 - ur_dashboard_msgs  # docker.io has no RPM packages for RHEL
-- urdfdom_py  # Build failures on RHEL https://github.com/ros/urdf_parser_py/pull/78
 - usb_cam  # ffmpeg has no RPM package for RHEL
 - vrpn_mocap  # Requires unreleased changes: https://github.com/vrpn/vrpn/pull/278
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL
