@@ -62,6 +62,10 @@ package_blacklist:
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
+- ros_gz_bridge  # gazebo has no RPM packages for RHEL
+- ros_gz_image  # gazebo has no RPM packages for RHEL
+- ros_gz_interfaces  # gazebo has no RPM packages for RHEL
+- ros_gz_sim  # gazebo has no RPM packages for RHEL
 - ros_industrial_cmake_boilerplate  # iwyu has no RPM packages for RHEL 9
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
 - rsl  # Requires CMake 3.22
