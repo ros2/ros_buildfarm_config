@@ -11,8 +11,6 @@ jenkins_binary_job_timeout: 120
 jenkins_source_job_priority: 70
 jenkins_source_job_timeout: 30
 notifications:
-  emails:
-  - scott+build.ros2.org@openrobotics.org
   maintainers: false
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
