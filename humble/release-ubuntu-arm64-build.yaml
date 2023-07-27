@@ -16,6 +16,9 @@ sync:
   package_count: 499
   packages: [desktop]
 package_blacklist:
+- kortex_api  # Kinova does not provide arm64, only armv7. https://github.com/PickNikRobotics/ros2_kortex/issues/158
+- kortex_bringup  # depends on kortex_api and kortex_driver
+- kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_geometry_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
 - swri_roscpp  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
