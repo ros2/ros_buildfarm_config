@@ -12,6 +12,10 @@ notifications:
   - yadunund+build.ros2.org@openrobotics.org
   - ros2-buildfarm-iron@googlegroups.com
   maintainers: true
+package_blacklist:
+- kortex_api  # Kinova does not provide arm64, only armv7. https://github.com/PickNikRobotics/ros2_kortex/issues/158
+- kortex_bringup  # depends on kortex_api and kortex_driver
+- kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
 package_dependency_behavior:
   run_package_tests: false
 sync:
