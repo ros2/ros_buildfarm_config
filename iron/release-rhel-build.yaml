@@ -37,6 +37,7 @@ package_blacklist:
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
 - mrt_cmake_modules  # Build failes due to ambiguous Python shebang
+- nao_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/nao_meshes-release/issues/1
 - octomap_rviz_plugins  # Build failures on RHEL
 - octomap_server  # Build failures on RHEL
 - octovis  # Build failures on RHEL
@@ -44,6 +45,7 @@ package_blacklist:
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
+- pepper_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/pepper_meshes2-release/issues/1
 - performance_test  # Missing dependency on git: https://gitlab.com/ApexAI/performance_test/-/merge_requests/371
 - proxsuite  # simde and matio have no RPM packages for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9

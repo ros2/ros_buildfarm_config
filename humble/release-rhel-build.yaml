@@ -27,6 +27,7 @@ package_blacklist:
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
+- nao_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/nao_meshes-release/issues/1
 - ntpd_driver  # libpoco-dev has no RPM package for RHEL 8
 - octomap_rviz_plugins  # Build failures on RHEL
 - octomap_server  # Build failures on RHEL
@@ -35,6 +36,7 @@ package_blacklist:
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
+- pepper_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/pepper_meshes2-release/issues/1
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
 - rcgcd_spl_14  # python3-construct has no RPM for RHEL 8
 - rcgcrd_spl_4  # python3-construct has no RPM for RHEL 8
