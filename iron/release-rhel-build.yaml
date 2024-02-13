@@ -19,7 +19,6 @@ package_dependency_behavior:
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3
-- apex_containers  # Build failures on RHEL due to -Werror
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - four_wheel_steering_msgs  # Requires unreleased changes
 - fuse_constraints  # Requires unreleased changes
@@ -28,13 +27,12 @@ package_blacklist:
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
-- kobuki_core  # Build failures on RHEL
+- kobuki_core  # Build failures on RHEL due to -Werror
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
-- mrpt2  # ffmpeg has no RPM package in supported repositories
+- mrpt2  # libfyaml has no RPM package for RHEL
 - mrt_cmake_modules  # Build failes due to ambiguous Python shebang
 - nao_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/nao_meshes-release/issues/1
-- octomap_rviz_plugins  # Build failures on RHEL
 - octomap_server  # Build failures on RHEL
 - octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
@@ -44,7 +42,6 @@ package_blacklist:
 - performance_test  # Missing dependency on git: https://gitlab.com/ApexAI/performance_test/-/merge_requests/371
 - proxsuite  # simde and matio have no RPM packages for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
-- rig_reconfigure  # Missing dependency on git: https://github.com/teamspatzenhirn/rig_reconfigure/pull/10
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # ignition has no RPM packages for RHEL
@@ -55,7 +52,6 @@ package_blacklist:
 - rmf_robot_sim_common  # ignition has no RPM packages for RHEL
 - rmf_traffic_editor  # ignition has no RPM packages for RHEL
 - rmf_traffic_editor_assets  # ignition has no RPM packages for RHEL
-- rmf_traffic_ros2  # Build failures on RHEL https://github.com/open-rmf/rmf_ros2/issues/156
 - ros_ign_bridge  # ignition has no RPM packages for RHEL
 - ros_ign_gazebo  # ignition has no RPM packages for RHEL
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
@@ -72,7 +68,7 @@ package_blacklist:
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - tvm_vendor  # Build failures on AlmaLinux (but not RHEL)
 - ur_dashboard_msgs  # docker.io has no RPM packages for RHEL
-- usb_cam  # ffmpeg has no RPM package for RHEL
+- usb_cam  # v4l-utils has no RPM package for RHEL
 - vrpn_mocap  # Requires unreleased changes: https://github.com/vrpn/vrpn/pull/278
 - warehouse_ros_mongo  # mongodb has no RPM package for RHEL
 - webots_ros2  # Not yet generated for RHEL
