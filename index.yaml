@@ -89,7 +89,7 @@ distributions:
     release_builds:
       default: rolling/release-build.yaml
       rhel: rolling/release-rhel-build.yaml
-      ujv8: rolling/release-ubuntu-arm64-build.yaml
+      unv8: rolling/release-ubuntu-arm64-build.yaml
     source_builds:
       default: rolling/source-build.yaml
 jenkins_url: https://build.ros2.org

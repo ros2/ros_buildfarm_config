@@ -55,7 +55,7 @@ repository_blacklist:
 - ros_workspace
 targets:
   ubuntu:
-    jammy:
+    noble:
       amd64:
 test_commits:
   default: true
