@@ -15,6 +15,7 @@ notifications:
 package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3
+- bno055  # python3-smbus has no RPM for RHEL 9
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - four_wheel_steering_msgs  # Requires unreleased changes
 - fuse_constraints  # Requires unreleased changes
