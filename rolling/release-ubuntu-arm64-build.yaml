@@ -17,6 +17,9 @@ package_blacklist:
 - kortex_bringup  # depends on kortex_api and kortex_driver
 - kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
 - mapviz  # Known issues with building on ARM processors. https://github.com/swri-robotics/mapviz/issues/777
+package_dependency_behavior:
+  include_test_dependencies: false
+  run_package_tests: false
 sync:
   package_count: 499
   packages: [desktop]

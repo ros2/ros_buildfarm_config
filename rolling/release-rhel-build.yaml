@@ -76,6 +76,9 @@ package_blacklist:
 - webots_ros2_ur_e_description  # Not yet generated for RHEL
 - wiimote  # cwiid has no RPM package for RHEL
 - zmqpp_vendor  # Targets 'HEAD' in vendor package
+package_dependency_behavior:
+  include_test_dependencies: false
+  run_package_tests: false
 package_ignore_list:
 - connext_cmake_module  # No RPM package for Connext
 - demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
