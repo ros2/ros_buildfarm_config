@@ -51,7 +51,7 @@ repositories:
   - http://repo.ros2.org/ubuntu/testing
 targets:
   ubuntu:
-    jammy:
+    noble:
       amd64:
 type: ci-build
 upload_directory: nightly-cyclonedds

@@ -54,7 +54,7 @@ repositories:
 shared_ccache: true
 targets:
   ubuntu:
-    jammy:
+    noble:
       amd64:
 type: ci-build
 version: 1
