@@ -68,7 +68,7 @@ distributions:
       nightly-cross-vendor-connext-cyclonedds: jazzy/ci-nightly-cross-vendor-connext-cyclonedds.yaml
       nightly-cross-vendor-connext-fastrtps: jazzy/ci-nightly-cross-vendor-connext-fastrtps.yaml
       nightly-cross-vendor-connext-fastrtps-dynamic: jazzy/ci-nightly-cross-vendor-connext-fastrtps-dynamic.yaml
-      nightly-cross-vendor-cyclonedds-fastrtps: rollingjazzyci-nightly-cross-vendor-cyclonedds-fastrtps.yaml
+      nightly-cross-vendor-cyclonedds-fastrtps: jazzy/ci-nightly-cross-vendor-cyclonedds-fastrtps.yaml
       nightly-cross-vendor-cyclonedds-fastrtps-dynamic: jazzy/ci-nightly-cross-vendor-cyclonedds-fastrtps-dynamic.yaml
       nightly-cross-vendor-fastrtps-fastrtps-dynamic: jazzy/ci-nightly-cross-vendor-fastrtps-fastrtps-dynamic.yaml
       nightly-cyclonedds: jazzy/ci-nightly-cyclonedds.yaml
