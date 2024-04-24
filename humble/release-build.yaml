@@ -7,7 +7,7 @@ build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 
 jenkins_binary_job_priority: 85
-jenkins_binary_job_timeout: 120
+jenkins_binary_job_timeout: 150
 jenkins_source_job_priority: 75
 jenkins_source_job_timeout: 30
 notifications:

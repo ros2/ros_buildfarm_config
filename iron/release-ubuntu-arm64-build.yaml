@@ -4,7 +4,7 @@
 abi_incompatibility_assumed: true
 jenkins_binary_job_label: buildagent_arm64 || iron_binarydeb_ujv8
 jenkins_binary_job_priority: 84
-jenkins_binary_job_timeout: 720
+jenkins_binary_job_timeout: 150
 jenkins_source_job_priority: 74
 jenkins_source_job_timeout: 30
 notifications:
