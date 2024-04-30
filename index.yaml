@@ -5,7 +5,6 @@ distributions:
   humble:
     ci_builds:
       benchmark: humble/ci-benchmark.yaml
-      drake-ros-underlay: humble/ci-drake-ros-underlay.yaml
       nightly-connext: humble/ci-nightly-connext.yaml
       nightly-cross-vendor-connext-cyclonedds: humble/ci-nightly-cross-vendor-connext-cyclonedds.yaml
       nightly-cross-vendor-connext-fastrtps: humble/ci-nightly-cross-vendor-connext-fastrtps.yaml
