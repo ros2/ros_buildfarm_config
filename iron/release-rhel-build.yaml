@@ -27,7 +27,6 @@ package_blacklist:
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
-- kobuki_core  # Build failures on RHEL due to -Werror
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # libfyaml has no RPM package for RHEL
