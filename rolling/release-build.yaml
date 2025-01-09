@@ -4,6 +4,9 @@
 abi_incompatibility_assumed: true
 
 build_environment_variables:
+  # Disable AVX512 opcodes in case we build on Xeon
+  DEB_CFLAGS_MAINT_APPEND: -mno-avx512f
+  DEB_CXXFLAGS_MAINT_APPEND: -mno-avx512f
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 
 jenkins_binary_job_priority: 80
