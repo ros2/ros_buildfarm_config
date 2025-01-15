@@ -15,6 +15,8 @@ notifications:
   - steven+build.ros2.org@openrobotics.org
   - ros2-buildfarm-rolling@googlegroups.com
   maintainers: true
+package_blacklist:
+- rmf_demos_maps # Missing assets https://github.com/open-rmf/rmf_demos/issues/274
 package_dependency_behavior:
   include_test_dependencies: false
   run_package_tests: false
