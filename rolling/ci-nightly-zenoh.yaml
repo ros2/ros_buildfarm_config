@@ -1,25 +1,22 @@
 %YAML 1.1
-# ROS buildfarm release-build file
+# ROS buildfarm ci-build file
 ---
-abi_incompatibility_assumed: true
-
 build_environment_variables:
-  RTI_NC_LICENSE_ACCEPTED: 'yes'
-
-jenkins_binary_job_priority: 84
-jenkins_binary_job_timeout: 150
-jenkins_source_job_priority: 74
-jenkins_source_job_timeout: 30
-notifications:
-  emails:
-  - yadunund+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-iron@googlegroups.com
-  maintainers: true
-package_dependency_behavior:
-  run_package_tests: false
-sync:
-  package_count: 499
-  packages: [desktop]
+  ROS_PYTHON_VERSION: '3'
+  RUST_LOG: 'z=error'
+  ZENOH_CONFIG_OVERRIDE: 'scouting/multicast/enabled=true'
+  ZENOH_ROUTER_CHECK_ATTEMPTS: '-1'
+build_tool: colcon
+build_tool_args: '--cmake-args --no-warn-unused-cli'
+build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
+jenkins_job_label: ci-agent
+jenkins_job_priority: 50
+jenkins_job_schedule: 15 23 * * *
+jenkins_job_timeout: 300
+jenkins_job_weight: 4
+package_selection_args: '--packages-ignore foonathan_memory_vendor rosidl_dynamic_typesupport_fastrtps --packages-ignore-regex .*connext.* .*cyclonedds.* .*fastdds.* .*rmw_fastrtps.*'
+repos_files:
+- https://github.com/ros2/ros2/raw/rolling/ros2.repos
 repositories:
   keys:
   - |
@@ -54,12 +51,10 @@ repositories:
     =i0tj
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://repo.ros2.org/ubuntu/building
-target_repository: http://repo.ros2.org/ubuntu/building
+  - http://repo.ros2.org/ubuntu/testing
 targets:
   ubuntu:
-    jammy:
+    noble:
       amd64:
-type: release-build
-upload_credential_id: jenkins-agent
-version: 2
+type: ci-build
+version: 1
