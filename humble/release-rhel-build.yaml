@@ -53,7 +53,6 @@ package_blacklist:
 - ros_gz_interfaces  # gazebo has no RPM packages for RHEL
 - ros_gz_sim  # gazebo has no RPM packages for RHEL
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
-- rsl  # Not yet generated for RHEL
 - sdformat_test_files  # sdformat has no RPM packages for RHEL 8
 - sdformat_urdf  # sdformat has no RPM packages for RHEL 8
 - swri_console_util  # Build failures on all platforms. https://github.com/swri-robotics/marti_common/issues/665
