@@ -25,6 +25,7 @@ package_blacklist:
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
+- navigation2  # Nav2 will not support RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # libfyaml has no RPM package for RHEL
@@ -51,6 +52,7 @@ package_blacklist:
 - ros_ign_interfaces  # ignition has no RPM packages for RHEL
 - ros_industrial_cmake_boilerplate  # iwyu has no RPM packages for RHEL 9
 - ros1_bridge  # ROS Noetic has no RPM packages for RHEL
+- slam_toolbox  # Nav2 doesn't support RHEL and this depends on it
 - sol_vendor  # Targets 'HEAD' in vendor package
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
 - tvm_vendor  # Build failures on AlmaLinux (but not RHEL)
