@@ -19,12 +19,49 @@ package_blacklist:
 - ament_black  # python3-uvloop and black have no RPM packages for RHEL
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
+- costmap_queue   # Nav2 will not support RHEL
+- dwb_core  # Nav2 will not support RHEL
+- dwb_critics  # Nav2 will not support RHEL
+- dwb_msgs  # Nav2 will not support RHEL
+- dwb_plugins  # Nav2 will not support RHEL
 - four_wheel_steering_msgs  # Requires unreleased changes
 - fuse_constraints  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
+- nav2_amcl  # Nav2 will not support RHEL
+- nav2_behavior_tree  # Nav2 will not support RHEL
+- nav2_bringup  # Nav2 will not support RHEL
+- nav2_bt_navigator  # Nav2 will not support RHEL
+- nav2_collision_monitor  # Nav2 will not support RHEL
+- nav2_common  # Nav2 will not support RHEL
+- nav2_constrained_smoother  # Nav2 will not support RHEL
+- nav2_controller  # Nav2 will not support RHEL
+- nav2_core  # Nav2 will not support RHEL
+- nav2_costmap_2d  # Nav2 will not support RHEL
+- nav2_dwb_controller  # Nav2 will not support RHEL
+- nav2_graceful_controller  # Nav2 will not support RHEL
+- nav2_lifecycle_manager  # Nav2 will not support RHEL
+- nav2_loopback_sim  # Nav2 will not support RHEL
+- nav2_map_server  # Nav2 will not support RHEL
+- nav2_mppi_controller  # Nav2 will not support RHEL
+- nav2_msgs  # Nav2 will not support RHEL
+- nav2_navfn_planner  # Nav2 will not support RHEL
+- nav2_planner  # Nav2 will not support RHEL
+- nav2_regulated_pure_pursuit_controller  # Nav2 will not support RHEL
+- nav2_ros_common  # Nav2 will not support RHEL
+- nav2_rotation_shim_controller  # Nav2 will not support RHEL
+- nav2_route  # Nav2 will not support RHEL
+- nav2_rviz_plugins  # Nav2 will not support RHEL
+- nav2_simple_commander  # Nav2 will not support RHEL
+- nav2_smac_planner  # Nav2 will not support RHEL
+- nav2_smoother  # Nav2 will not support RHEL
+- nav2_system_tests  # Nav2 will not support RHEL
+- nav2_util  # Nav2 will not support RHEL
+- nav2_velocity_smoother  # Nav2 will not support RHEL
+- nav2_voxel_grid  # Nav2 will not support RHEL
+- nav2_waypoint_follower  # Nav2 will not support RHEL
 - navigation2  # Nav2 will not support RHEL
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
@@ -34,6 +71,9 @@ package_blacklist:
 - octovis  # Build failures on RHEL
 - ompl  # opende has no RPM package for RHEL
 - open3d_conversions  # open3d has no RPM package for RHEL
+- opennav_docking  # Nav2 will not support RHEL
+- opennav_docking_bt  # Nav2 will not support RHEL
+- opennav_docking_core  # Nav2 will not support RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - proxsuite  # simde has no RPM package for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
