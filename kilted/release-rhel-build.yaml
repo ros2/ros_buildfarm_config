@@ -97,6 +97,7 @@ package_blacklist:
 - spinnaker_camera_driver # spinnaker SDK not available as RPM package
 - spinnaker_synchronized_camera_driver # depends on spinnaker_camera_driver
 - tracetools_analysis  # jupyter-notebook has no RPM package for RHEL
+- turtle_nest # Turtle Nest does not support RHEL
 - tvm_vendor  # Build failures on AlmaLinux (but not RHEL)
 - ur_dashboard_msgs  # Upstream for ur_robot_driver, for which docker.io has no RPM packages for RHEL
 - usb_cam  # v4l-utils has no RPM package for RHEL
