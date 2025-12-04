@@ -3,9 +3,6 @@
 ---
 build_environment_variables:
   ROS_PYTHON_VERSION: '3'
-  RUST_LOG: 'z=error'
-  ZENOH_CONFIG_OVERRIDE: 'scouting/multicast/enabled=true'
-  ZENOH_ROUTER_CHECK_ATTEMPTS: '-1'
 build_tool: colcon
 build_tool_args: '--cmake-args --no-warn-unused-cli'
 build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
