@@ -5,6 +5,7 @@ ci_builds:
   infra: global/ci-infra.yaml
 doc_builds:
   ros-index: global/doc-ros-index.yaml
+  independent-packages: global/doc-independent-pkgs-build.yaml
 distributions:
   humble:
     ci_builds:
