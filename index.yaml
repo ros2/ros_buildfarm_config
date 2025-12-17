@@ -4,9 +4,9 @@
 ci_builds:
   infra: global/ci-infra.yaml
 doc_builds:
-  ros-index: global/doc-ros-index.yaml
   independent-packages: global/doc-independent-pkgs-build.yaml
-  ros2doc: doc-ros2-documentation.yaml
+  ros-index: global/doc-ros-index.yaml
+  ros2doc: global/doc-ros2-documentation.yaml
 distributions:
   humble:
     ci_builds:
