@@ -131,7 +131,6 @@ notification_emails:
 prerequisites:
   debian_repositories:
   - http://repo.ros2.org/ubuntu/building
-  - http://repositories.ros.org/ubuntu/main
   debian_repository_keys:
   - |
     -----BEGIN PGP PUBLIC KEY BLOCK-----
