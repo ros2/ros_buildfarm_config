@@ -67,5 +67,7 @@ targets:
   ubuntu:
     noble:
       amd64:
+    resolute:
+      amd64:
 type: ci-build
 version: 1
