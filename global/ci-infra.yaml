@@ -36,6 +36,7 @@ install_packages:
 - python3-git
 - python3-github
 - python3-jinja2
+- python3-mypy
 - python3-myst-parser
 - python3-pep8
 - python3-pexpect
@@ -46,10 +47,13 @@ install_packages:
 - python3-sphinx-prompt
 - python3-sphinx-rtd-theme
 - python3-termcolor
+- python3-typeshed
+- python3-unidiff
 - python3-vcstools
 - python3-xmltodict
 - ruby
 - subversion
+- yamllint
 jenkins_job_label: ci-agent
 jenkins_job_priority: 50
 jenkins_job_schedule: 10 23 * * *
