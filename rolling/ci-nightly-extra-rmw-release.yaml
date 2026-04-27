@@ -64,7 +64,7 @@ repositories:
   - http://repo.ros2.org/ubuntu/testing
 targets:
   ubuntu:
-    noble:
+    resolute:
       amd64:
 type: ci-build
 version: 1

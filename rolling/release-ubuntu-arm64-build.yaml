@@ -78,7 +78,7 @@ repositories:
 target_repository: http://repo.ros2.org/ubuntu/building
 targets:
   ubuntu:
-    noble:
+    resolute:
       arm64:
 type: release-build
 upload_credential_id: jenkins-agent

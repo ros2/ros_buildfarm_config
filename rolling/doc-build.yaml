@@ -61,7 +61,7 @@ repositories:
   - http://repo.ros2.org/ubuntu/testing/
 targets:
   ubuntu:
-    noble:
+    resolute:
       amd64:
 type: doc-build
 upload_credential_id: rosdocs
