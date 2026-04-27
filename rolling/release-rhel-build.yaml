@@ -146,7 +146,7 @@ repositories:
 target_repository: http://repo.ros2.org/rhel/building
 targets:
   rhel:
-    '9':
+    '10':
       x86_64:
 type: release-build
 upload_credential_id: jenkins-agent
