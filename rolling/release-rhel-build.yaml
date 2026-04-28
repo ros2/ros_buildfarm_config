@@ -75,6 +75,7 @@ package_blacklist:
 package_dependency_behavior:
   include_test_dependencies: false
   run_package_tests: false
+  include_group_dependencies: true
 package_ignore_list:
 - connext_cmake_module  # No RPM package for Connext
 - demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
