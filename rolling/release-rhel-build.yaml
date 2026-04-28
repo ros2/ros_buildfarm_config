@@ -93,6 +93,17 @@ package_ignore_list:
 - rosidl_typesupport_connext_cpp  # No RPM package for Connext
 - rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
 - rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rosidlcpp_generator_c  # Build fails on RHEL
+- rosidlcpp_generator_cpp  # Build fails on RHEL
+- rosidlcpp_generator_core  # Build fails on RHEL
+- rosidlcpp_generator_py  # Build fails on RHEL
+- rosidlcpp_generator_type_description  # Build fails on RHEL
+- rosidlcpp_typesupport_c  # Build fails on RHEL
+- rosidlcpp_typesupport_cpp  # Build fails on RHEL
+- rosidlcpp_typesupport_fastrtps_c  # Build fails on RHEL
+- rosidlcpp_typesupport_fastrtps_cpp  # Build fails on RHEL
+- rosidlcpp_typesupport_introspection_c  # Build fails on RHEL
+- rosidlcpp_typesupport_introspection_cpp  # Build fails on RHEL
 - rti_connext_dds_cmake_module  # No RPM package for Connext
 sync:
   package_count: 400
