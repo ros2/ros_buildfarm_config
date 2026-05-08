@@ -7,7 +7,7 @@ doc_repositories:
     url: https://github.com/ros2/ros2_documentation.git
     branch: rolling
 jenkins_job_priority: 80
-jenkins_job_timeout: 30
+jenkins_job_timeout: 40
 notifications:
   emails:
   - clalancette@openrobotics.org
