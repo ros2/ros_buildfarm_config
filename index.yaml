@@ -96,6 +96,24 @@ distributions:
     source_builds:
       default: kilted/source-build.yaml
   lyrical:
+    ci_builds:
+      benchmark: lyrical/ci-benchmark.yaml
+      nightly-connext: lyrical/ci-nightly-connext.yaml
+      nightly-cross-vendor-connext-cyclonedds: lyrical/ci-nightly-cross-vendor-connext-cyclonedds.yaml
+      nightly-cross-vendor-connext-fastrtps: lyrical/ci-nightly-cross-vendor-connext-fastrtps.yaml
+      nightly-cross-vendor-connext-fastrtps-dynamic: lyrical/ci-nightly-cross-vendor-connext-fastrtps-dynamic.yaml
+      nightly-cross-vendor-cyclonedds-fastrtps: lyrical/ci-nightly-cross-vendor-cyclonedds-fastrtps.yaml
+      nightly-cross-vendor-cyclonedds-fastrtps-dynamic: lyrical/ci-nightly-cross-vendor-cyclonedds-fastrtps-dynamic.yaml
+      nightly-cross-vendor-fastrtps-fastrtps-dynamic: lyrical/ci-nightly-cross-vendor-fastrtps-fastrtps-dynamic.yaml
+      nightly-cyclonedds: lyrical/ci-nightly-cyclonedds.yaml
+      nightly-debug: lyrical/ci-nightly-debug.yaml
+      nightly-extra-rmw-release: lyrical/ci-nightly-extra-rmw-release.yaml
+      nightly-fastrtps: lyrical/ci-nightly-fastrtps.yaml
+      nightly-fastrtps-dynamic: lyrical/ci-nightly-fastrtps-dynamic.yaml
+      nightly-performance: lyrical/ci-nightly-performance.yaml
+      nightly-release: lyrical/ci-nightly-release.yaml
+      nightly-zenoh: lyrical/ci-nightly-zenoh.yaml
+      overlay: lyrical/ci-overlay.yaml
     doc_builds:
       default: lyrical/doc-build.yaml
     notification_emails:
