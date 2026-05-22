@@ -14,6 +14,8 @@ notifications:
   emails:
   - ros2-buildfarm-kilted@googlegroups.com
   maintainers: true
+package_blacklist:
+- crocoddyl # Fails to build on all distributions
 package_dependency_behavior:
   include_test_dependencies: false
   run_package_tests: false
