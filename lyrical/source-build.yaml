@@ -14,7 +14,7 @@ notifications:
   compiler_warnings: true
   emails:
   - steven+build.ros2.org@openrobotics.org
-  - ros2-buildfarm-rolling@googlegroups.com
+  - ros2-buildfarm-lyrical@googlegroups.com
   maintainers: true
 repositories:
   keys:
