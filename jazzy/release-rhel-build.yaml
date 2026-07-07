@@ -25,6 +25,7 @@ package_blacklist:
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - kobuki_core  # Build failures on RHEL due to -Werror
+- librealsense2  # librealsense SDK is not supported on RHEL / no RPM package
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # libfyaml has no RPM package for RHEL
@@ -37,6 +38,9 @@ package_blacklist:
 - performance_test  # Missing dependency on git: https://gitlab.com/ApexAI/performance_test/-/merge_requests/371
 - proxsuite  # simde and matio have no RPM packages for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
+- realsense2_camera  # depends on librealsense2, which is not supported on RHEL
+- realsense2_camera_msgs  # part of realsense-ros; librealsense2 not supported on RHEL
+- realsense2_description  # part of realsense-ros; librealsense2 not supported on RHEL
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # ignition has no RPM packages for RHEL

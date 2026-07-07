@@ -24,6 +24,7 @@ package_blacklist:
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
 - libmavconn  # asio has no RPM package for RHEL 8
+- librealsense2  # librealsense SDK is not supported on RHEL / no RPM package
 - moveit_common  # libogre-dev has no RPM package for RHEL
 - moveit_resources_prbt_support  # libogre-dev has no RPM package for RHEL
 - mrpt2  # ffmpeg has no RPM package in supported repositories
@@ -38,6 +39,9 @@ package_blacklist:
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
 - pepper_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/pepper_meshes2-release/issues/1
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
+- realsense2_camera  # depends on librealsense2, which is not supported on RHEL
+- realsense2_camera_msgs  # part of realsense-ros; librealsense2 not supported on RHEL
+- realsense2_description  # part of realsense-ros; librealsense2 not supported on RHEL
 - rmf_building_map_tools  # ignition has no RPM packages for RHEL
 - rmf_building_sim_common  # ignition has no RPM packages for RHEL
 - rmf_demos_assets  # ignition has no RPM packages for RHEL
