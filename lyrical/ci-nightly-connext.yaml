@@ -11,7 +11,7 @@ build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-arg
 jenkins_job_label: ci-agent
 jenkins_job_priority: 51
 jenkins_job_schedule: 15 23 1-29/4 * *
-jenkins_job_timeout: 360
+jenkins_job_timeout: 480
 jenkins_job_weight: 4
 package_selection_args: '--packages-ignore-regex .*cyclonedds.* rmw_fastrtps.* .*zenoh*.'
 repos_files:
