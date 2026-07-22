@@ -1,0 +1,211 @@
+%YAML 1.1
+# ROS buildfarm release-build file
+---
+abi_incompatibility_assumed: true
+
+build_environment_variables:
+  RPM_BUILD_NCPUS: '1'
+
+jenkins_binary_job_priority: 81
+jenkins_binary_job_timeout: 150
+jenkins_source_job_priority: 71
+jenkins_source_job_timeout: 30
+notifications:
+  maintainers: false
+package_blacklist:
+- acado_vendor  # build fails due to missing buildtool_depend on git
+- adaptive_component  # build fails due to ament_target_dependencies
+- ament_black  # python3-uvloop has no RPM package on Fedora
+- ament_download  # build fails due to ambiguous python shebang
+- apriltag_ros  # build fails to compile due to missing tf2/convert.h
+- aruco_ros  # build fails due to ament_target_dependencies
+- automatika_ros_sugar  # python3-msgpack-numpy has no RPM package on Fedora
+- azure_iot_sdk_c  # build fails during linking with lto-wrapper
+- broll  # build fails to find libavcodec (missing FindPackage?)
+- cartographer  # build fails during compilation
+- coal  # build fails due to missing libz.so
+- color_names  # build fails due to ament_target_dependencies
+- control_box_rst  # build fails (eigen incompatibility?)
+- cuda_buffer  # nvidia-cuda has no RPM package on Fedora
+- cx_utils  # build fails due to ament_target_dependencies
+- dual_laser_merger  # build fails to compile due to missing message_filters/subscriber.h
+- dynamixel_hardware  # build fails due to ament_target_dependencies
+- ecl_io  # build fails due to Werror
+- ecl_time  # build fails due to Werror
+- ecl_time_lite  # build fails due to Werror
+- eiquadprog  # build fails during install (missing doc dependency?)
+- feetech_ros2_driver  # libserial-dev has no RPM package on Fedora
+- ffw_joint_trajectory_command_broadcaster  # build fails during compile
+- four_wheel_steering_msgs  # incorrectly marked as architecture_independent
+- fuse_graphs  # build fails to find glog (ceres bug?)
+- fuse_loss  # build fails to find glog (ceres bug?)
+- fuse_variables  # build fails to find glog (ceres bug?)
+- generate_parameter_library  # references non-existant package 'tl_expected'
+- geodesy  # build fails due to ament_target_dependencies
+- hri  # build fails to find magic_enum.hpp
+- ifm3d_core  # build fails when trying to use /usr/src/gtest
+- interactive_marker_twist_server  # build fails due to ament_target_dependencies
+- io_context  # build fails due to ament_target_dependencies
+- kinematics_interface  # pending ros-controls/kinematics_interface#289
+- kortex_driver  # build fails due to ament_target_dependencies
+- lely_core_libraries  # build fails compiling with unknown 'Wno-static-in-inline'
+- leo_fw  # python3-whichcraft has no RPM package on Fedora
+- libcaer_vendor  # build fails due to bad RPATHs
+- libg2o  # build fails during CMake due to missing CCOLAMD
+- librealsense2  # build fails due to files installed outside of /opt/ros
+- libtorch_vendor  # build fails due to foreign binaries
+- mapviz  # build fails in CMake due to Qt6
+- mavlink  # python3-future has no RPM package on Fedora
+- message_tf_frame_transformer  # build fails due to ament_target_dependencies
+- micro_ros_diagnostic_bridge  # build fails due to ament_target_dependencies
+- microstrain_inertial_driver  # build fails due to ament_target_dependencies
+- motion_capture_tracking  # build fails to compile
+- moveit_ros_tests  # build fails due to nothing installed
+- mqtt_client  # build fails due to ament_target_dependencies
+- mrpt_libbase  # build fails due to missing buildtool_depend on git
+- mrt_cmake_modules  # build fails due to ambiguous python shebang
+- mujoco_vendor  # build fails due to missing build IDs
+- nanoeigenpy  # nanobind has no RPM package for Fedora
+- nao_lola  # build fails due to ament_target_dependencies
+- nao_lola_client  # build fails due to ament_target_dependencies
+- novatel_gps_driver  # build fails due to ament_target_dependencies
+- octomap_server  # build fails due to ambiguous python shebang
+- odri_master_board_sdk  # build fails due to bad RPATHs
+- ompl  # build fails due to bad RPATHs
+- openeb_vendor  # build fails due to bad RPATHs
+- openni2_camera  # build fails to find openni
+- ouster_ros  # build fails due to ament_target_dependencies
+- performance_test  # build fails due to ament_target_dependencies
+- picknik_reset_fault_controller  # build fails due to ament_target_dependencies
+- picknik_twist_controller  # build fails due to ament_target_dependencies
+- pinocchio  # references non-existant package 'hpp-fcl'
+- plotjuggler  # build fails during compilation
+- polygon_rviz_plugins  # build fails to find Qt5
+- qpoases_vendor  # build fails due to vanished upstream URL
+- raspimouse  # build fails due to ament_target_dependencies
+- rc_genicam_api  # build fails due to bad RPATHs
+- rclc_examples  # build fails due to compiler warning?
+- rcss3d_agent  # build fails due to ament_target_dependencies
+- rcss3d_agent_msgs_to_soccer_interfaces  # build fails due to ament_target_dependencies
+- rmf_traffic  # build fails during compilation (missing cstdint.h?)
+- rmf_visualization_floorplans  # build fails, possible opencv version incompatibility
+- robotiq_controllers  # build fails due to ament_target_dependencies
+- robotraconteur  # build fails due to bad RPATHs
+- ros2launch_security_examples  # build fails due to ament_target_dependencies
+- ros_image_to_qimage  # build fails due to ament_target_dependencies
+- rot_conv  # build fails due to ament_target_dependencies
+- rplidar_ros  # build fails due to ament_target_dependencies
+- rt_manipulators_cpp  # build fails due to ament_target_dependencies
+- rtsp_image_transport  # build fails, possible libavcodec version incompatibility
+- rt_usb_9axisimu_driver  # build fails due to ament_target_dependencies
+- rviz_visual_tools  # build fails due to ament_target_dependencies
+- sick_safetyscanners2  # build fails due to ament_target_dependencies
+- simple_launch  # build fails to find ament_cmake (due to runtime split?)
+- snowbot_operating_system  # build fails to find Qt5
+- sophus  # build fails to find glog (suitesparse bug?)
+- spinnaker_camera_driver  # build fails in CMake logic
+- system_modes  # build fails due to ament_target_dependencies
+- system_webview  # cpp-httplib-devel doesn't provide pkg-config
+- tvm_vendor  # build fails due to missing cblas.h
+- usb_cam  # build fails to find libavcodec (missing FindPackage?)
+- velodyne_pointcloud  # build fails due to missing tf2/LinearMath/Quaternion.h
+- vision_msgs_layers  # build fails due to ament_target_dependencies
+- vision_msgs_rviz_plugins  # build fails to find Qt5
+- vrpn_mocap  # build fails, possibly lib64 issue
+- webots_ros2_driver  # build fails to find Python 3.12
+- wiimote  # cwiid has no RPM package for RHEL
+- zbar_ros  # build fails due to ament_target_dependencies
+- zenoh_bridge_dds  # build fails due to rust panic during install
+- zmqpp_vendor  # build fails due to BUILD_SHARED_LIBS
+package_dependency_behavior:
+  include_group_dependencies: true
+  include_test_dependencies: false
+  run_package_tests: false
+package_ignore_list:
+- connext_cmake_module  # No RPM package for Connext
+- demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
+- gurumdds_cmake_module  # No RPM package for GurumDDS
+- rmw_connext_cpp  # No RPM package for Connext
+- rmw_connext_dynamic_cpp  # No RPM package for Connext
+- rmw_connext_shared_cpp  # No RPM package for Connext
+- rmw_connextdds  # No RPM package for Connext
+- rmw_connextddsmicro  # No RPM package for Connext
+- rmw_connextdds_common  # No RPM package for Connext
+- rmw_gurumdds_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_shared_cpp  # No RPM package for GurumDDS
+- rmw_gurumdds_static_cpp  # No RPM package for GurumDDS
+- rosidl_typesupport_connext_c  # No RPM package for Connext
+- rosidl_typesupport_connext_cpp  # No RPM package for Connext
+- rosidl_typesupport_gurumdds_c  # No RPM package for GurumDDS
+- rosidl_typesupport_gurumdds_cpp  # No RPM package for GurumDDS
+- rosidlcpp_generator_c  # Build fails on RHEL
+- rosidlcpp_generator_cpp  # Build fails on RHEL
+- rosidlcpp_generator_core  # Build fails on RHEL
+- rosidlcpp_generator_py  # Build fails on RHEL
+- rosidlcpp_generator_type_description  # Build fails on RHEL
+- rosidlcpp_typesupport_c  # Build fails on RHEL
+- rosidlcpp_typesupport_cpp  # Build fails on RHEL
+- rosidlcpp_typesupport_fastrtps_c  # Build fails on RHEL
+- rosidlcpp_typesupport_fastrtps_cpp  # Build fails on RHEL
+- rosidlcpp_typesupport_introspection_c  # Build fails on RHEL
+- rosidlcpp_typesupport_introspection_cpp  # Build fails on RHEL
+- rti_connext_dds_cmake_module  # No RPM package for Connext
+sync:
+  package_count: 499
+  packages: [desktop]
+repositories:
+  keys:
+  - |
+    -----BEGIN PGP PUBLIC KEY BLOCK-----
+    Version: GnuPG v1
+
+    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
+    =9IZg
+    -----END PGP PUBLIC KEY BLOCK-----
+  urls:
+  - http://repo.ros2.org/fedora/building/$releasever/$basearch/
+target_repository: http://repo.ros2.org/fedora/building
+targets:
+  fedora:
+    '43':
+      x86_64:
+type: release-build
+upload_credential_id: jenkins-agent
+upload_host: repo.ros2.org
+version: 2

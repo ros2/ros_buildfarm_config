@@ -120,6 +120,7 @@ distributions:
     - ros2-buildfarm-rolling@googlegroups.com
     release_builds:
       default: lyrical/release-build.yaml
+      fedora: lyrical/release-fedora-build.yaml
       rhel: lyrical/release-rhel-build.yaml
       armv8: lyrical/release-ubuntu-arm64-build.yaml
     source_builds:
