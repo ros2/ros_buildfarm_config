@@ -14,6 +14,11 @@ notifications:
 type: doc-build
 upload_credential_id: rosdocs
 upload_host: docs.ros.org
+# Freeze mode: deploy only the distros that were actually built and never prune
+# sibling directories, so EOL distros dropped from the multiversion whitelist
+# stay served instead of being deleted.
+# See https://github.com/ros2/ros2_documentation/issues/6964
+upload_prune: false
 upload_root: /var/www/docs.ros.org/en/ros2_documentation
 upload_user: rosdocs
 version: 2
