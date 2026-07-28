@@ -16,6 +16,7 @@ jenkins_job_weight: 4
 package_selection_args: '--packages-ignore-regex .*cyclonedds.* rmw_fastrtps.* .*zenoh*.'
 repos_files:
 - https://github.com/ros2/ros2/raw/rolling/ros2.repos
+single_stage: true
 repositories:
   keys:
   - |
