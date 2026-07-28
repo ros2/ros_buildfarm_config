@@ -7,7 +7,9 @@ build_environment_variables:
   RTI_NC_LICENSE_ACCEPTED: 'yes'
 build_tool: colcon
 build_tool_args: '--cmake-args -DCMAKE_BUILD_TYPE=Release --no-warn-unused-cli'
-build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail"'
+build_tool_test_args: '--retest-until-pass 2 --ctest-args -LE xfail --pytest-args -m "not xfail" --executor parallel'
+install_packages:
+- python3-colcon-ros-domain-id-coordinator
 jenkins_job_label: ci-agent
 jenkins_job_priority: 50
 jenkins_job_timeout: 600
