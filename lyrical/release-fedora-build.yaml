@@ -54,7 +54,6 @@ package_blacklist:
 - libg2o  # build fails during CMake due to missing CCOLAMD
 - librealsense2  # build fails due to files installed outside of /opt/ros
 - libtorch_vendor  # build fails due to foreign binaries
-- mapviz  # build fails in CMake due to Qt6
 - mavlink  # python3-future has no RPM package on Fedora
 - message_tf_frame_transformer  # build fails due to ament_target_dependencies
 - micro_ros_diagnostic_bridge  # build fails due to ament_target_dependencies
