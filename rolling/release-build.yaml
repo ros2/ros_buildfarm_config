@@ -21,7 +21,7 @@ package_dependency_behavior:
 sync:
   auto_trigger_main: true
   package_count: 499
-  packages: [desktop]
+  packages: [desktop, desktop_full, simulation]
 repositories:
   keys:
   - |
