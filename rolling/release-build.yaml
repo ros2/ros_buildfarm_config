@@ -19,6 +19,7 @@ package_dependency_behavior:
   include_test_dependencies: false
   run_package_tests: false
 sync:
+  auto_trigger_main: true
   package_count: 499
   packages: [desktop]
 repositories:
