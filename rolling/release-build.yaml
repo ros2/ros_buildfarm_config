@@ -20,8 +20,8 @@ package_dependency_behavior:
   run_package_tests: false
 sync:
   auto_trigger_main: true
-  package_count: 499
-  packages: [desktop, desktop_full, simulation]
+  package_percent: 80
+  packages: [desktop_full]
 repositories:
   keys:
   - |
