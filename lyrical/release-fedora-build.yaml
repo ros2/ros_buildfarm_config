@@ -40,7 +40,6 @@ package_blacklist:
 - fuse_graphs  # build fails to find glog (ceres bug?)
 - fuse_loss  # build fails to find glog (ceres bug?)
 - fuse_variables  # build fails to find glog (ceres bug?)
-- generate_parameter_library  # references non-existant package 'tl_expected'
 - geodesy  # build fails due to ament_target_dependencies
 - hri  # build fails to find magic_enum.hpp
 - ifm3d_core  # build fails when trying to use /usr/src/gtest
