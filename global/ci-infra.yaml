@@ -41,6 +41,7 @@ install_packages:
 - python3-pep8
 - python3-pexpect
 - python3-pip
+- python3-responses
 - python3-scantree
 - python3-sphinx
 - python3-sphinx-book-theme
