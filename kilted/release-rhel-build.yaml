@@ -34,6 +34,7 @@ package_blacklist:
 - ign_ros2_control  # ignition has no RPM packages for RHEL
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - librealsense2  # librealsense SDK is not supported on RHEL / no RPM package
+- nao_meshes  # Fails to build, resulting in multi-gigabyte log file
 - nav2_amcl  # Nav2 will not support RHEL
 - nav2_behavior_tree  # Nav2 will not support RHEL
 - nav2_bringup  # Nav2 will not support RHEL
@@ -79,6 +80,7 @@ package_blacklist:
 - opennav_docking_bt  # Nav2 will not support RHEL
 - opennav_docking_core  # Nav2 will not support RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
+- pepper_meshes  # Failes to build, resulting in multi-gigabyte log file
 - proxsuite  # simde has no RPM package for RHEL 9
 - py_trees_js  # python3-pyqt5.qtwebengine has no RPM packages for RHEL 9
 - realsense2_camera  # depends on librealsense2, which is not supported on RHEL
