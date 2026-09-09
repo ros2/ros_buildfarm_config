@@ -48,6 +48,8 @@ install_packages:
 - python3-sphinx-prompt
 - python3-sphinx-rtd-theme
 - python3-termcolor
+- python3-tomli
+- python3-tomli-w
 - python3-typeshed
 - python3-unidiff
 - python3-vcstools
