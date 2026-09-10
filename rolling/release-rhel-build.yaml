@@ -81,6 +81,7 @@ package_dependency_behavior:
   run_package_tests: false
 package_ignore_list:
 - connext_cmake_module  # No RPM package for Connext
+- crocoddyl # Fails to build on all distributions
 - demo_nodes_cpp_native_gurumdds  # No RPM package for GurumDDS
 - gurumdds_cmake_module  # No RPM package for GurumDDS
 - rmw_connext_cpp  # No RPM package for Connext
