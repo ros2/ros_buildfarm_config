@@ -69,7 +69,6 @@ package_blacklist:
 - novatel_gps_driver  # build fails due to ament_target_dependencies
 - octomap_server  # build fails due to ambiguous python shebang
 - odri_master_board_sdk  # build fails due to bad RPATHs
-- ompl  # build fails due to bad RPATHs
 - openeb_vendor  # build fails due to bad RPATHs
 - openni2_camera  # build fails to find openni
 - ouster_ros  # build fails due to ament_target_dependencies

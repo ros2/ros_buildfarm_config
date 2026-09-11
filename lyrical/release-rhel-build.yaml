@@ -31,7 +31,6 @@ package_blacklist:
 - mrt_cmake_modules  # Build failes due to ambiguous Python shebang
 - octomap_server  # Build failures on RHEL
 - octovis  # Build failures on RHEL
-- ompl  # opende has no RPM package for RHEL
 - open3d_conversions  # open3d has no RPM package for RHEL
 - openni2_camera  # libopenni2-dev does not exist on RHEL
 - proxsuite  # simde has no RPM package for RHEL 9
