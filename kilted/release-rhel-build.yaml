@@ -22,6 +22,7 @@ package_blacklist:
 - camera_aravis2_msgs  # aravis-dev has no RPM package for RHEL
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
 - costmap_queue   # Nav2 will not support RHEL
+- crocoddyl # Fails to build on all distributions
 - dwb_core  # Nav2 will not support RHEL
 - dwb_critics  # Nav2 will not support RHEL
 - dwb_msgs  # Nav2 will not support RHEL
