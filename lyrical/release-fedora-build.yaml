@@ -70,7 +70,6 @@ package_blacklist:
 - performance_test  # build fails due to ament_target_dependencies
 - picknik_reset_fault_controller  # build fails due to ament_target_dependencies
 - picknik_twist_controller  # build fails due to ament_target_dependencies
-- pinocchio  # references non-existant package 'hpp-fcl'
 - plotjuggler  # build fails during compilation
 - polygon_rviz_plugins  # build fails to find Qt5
 - qpoases_vendor  # build fails due to vanished upstream URL
