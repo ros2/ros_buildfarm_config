@@ -17,19 +17,16 @@ package_blacklist:
 - adaptive_component  # build fails due to ament_target_dependencies
 - ament_black  # python3-uvloop has no RPM package on Fedora
 - ament_download  # build fails due to ambiguous python shebang
-- apriltag_ros  # build fails to compile due to missing tf2/convert.h
 - aruco_ros  # build fails due to ament_target_dependencies
 - automatika_ros_sugar  # python3-msgpack-numpy has no RPM package on Fedora
 - azure_iot_sdk_c  # build fails during linking with lto-wrapper
 - broll  # build fails to find libavcodec (missing FindPackage?)
 - cartographer  # build fails during compilation
-- coal  # build fails due to missing libz.so
 - color_names  # build fails due to ament_target_dependencies
 - control_box_rst  # build fails (eigen incompatibility?)
 - cuda_buffer  # nvidia-cuda has no RPM package on Fedora
 - cx_utils  # build fails due to ament_target_dependencies
 - dual_laser_merger  # build fails to compile due to missing message_filters/subscriber.h
-- dynamixel_hardware  # build fails due to ament_target_dependencies
 - ecl_io  # build fails due to Werror
 - ecl_time  # build fails due to Werror
 - ecl_time_lite  # build fails due to Werror
@@ -45,7 +42,6 @@ package_blacklist:
 - ifm3d_core  # build fails when trying to use /usr/src/gtest
 - interactive_marker_twist_server  # build fails due to ament_target_dependencies
 - io_context  # build fails due to ament_target_dependencies
-- kinematics_interface  # pending ros-controls/kinematics_interface#289
 - kortex_driver  # build fails due to ament_target_dependencies
 - lely_core_libraries  # build fails compiling with unknown 'Wno-static-in-inline'
 - leo_fw  # python3-whichcraft has no RPM package on Fedora
@@ -58,15 +54,14 @@ package_blacklist:
 - micro_ros_diagnostic_bridge  # build fails due to ament_target_dependencies
 - microstrain_inertial_driver  # build fails due to ament_target_dependencies
 - motion_capture_tracking  # build fails to compile
+- moveit_kinematics  # build fails due to ambiguous python shebang
 - moveit_ros_tests  # build fails due to nothing installed
-- mqtt_client  # build fails due to ament_target_dependencies
 - mrpt_libbase  # build fails due to missing buildtool_depend on git
 - mrt_cmake_modules  # build fails due to ambiguous python shebang
 - mujoco_vendor  # build fails due to missing build IDs
-- nanoeigenpy  # nanobind has no RPM package for Fedora
+- nanoeigenpy  # build fails due to files installed outside of /opt/ros
 - nao_lola  # build fails due to ament_target_dependencies
 - nao_lola_client  # build fails due to ament_target_dependencies
-- novatel_gps_driver  # build fails due to ament_target_dependencies
 - octomap_server  # build fails due to ambiguous python shebang
 - odri_master_board_sdk  # build fails due to bad RPATHs
 - openeb_vendor  # build fails due to bad RPATHs
@@ -95,7 +90,6 @@ package_blacklist:
 - rt_manipulators_cpp  # build fails due to ament_target_dependencies
 - rtsp_image_transport  # build fails, possible libavcodec version incompatibility
 - rt_usb_9axisimu_driver  # build fails due to ament_target_dependencies
-- rviz_visual_tools  # build fails due to ament_target_dependencies
 - sick_safetyscanners2  # build fails due to ament_target_dependencies
 - simple_launch  # build fails to find ament_cmake (due to runtime split?)
 - snowbot_operating_system  # build fails to find Qt5
