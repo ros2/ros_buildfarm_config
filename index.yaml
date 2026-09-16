@@ -151,6 +151,7 @@ distributions:
     - ros2-buildfarm-rolling@googlegroups.com
     release_builds:
       default: rolling/release-build.yaml
+      fedora: rolling/release-fedora-build.yaml
       rhel: rolling/release-rhel-build.yaml
       unv8: rolling/release-ubuntu-arm64-build.yaml
     source_builds:
