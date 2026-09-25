@@ -65,7 +65,7 @@ targets:
       amd64:
 type: doc-build
 upload_credential_id: rosdocs
-upload_host: docs.ros.org
+upload_host: ros2.osuosl.org
 upload_root: /var/www/docs.ros.org/en/ros2_packages
 upload_user: rosdocs
 version: 2
