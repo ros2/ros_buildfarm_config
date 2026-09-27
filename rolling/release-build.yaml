@@ -19,8 +19,9 @@ package_dependency_behavior:
   include_test_dependencies: false
   run_package_tests: false
 sync:
-  package_count: 499
-  packages: [desktop]
+  auto_trigger_main: true
+  package_percent: 80
+  packages: [desktop_full]
 repositories:
   keys:
   - |
