@@ -16,6 +16,7 @@ package_blacklist:
 - acado_vendor  # Requires unreleased changes
 - bosch_locator_bridge  # libpoco-dev has no RPM package for RHEL 8
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 8
+- crocoddyl # Fails to build on all distributions
 - four_wheel_steering_msgs  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
 - gazebo_msgs  # Gazebo has no RPM package

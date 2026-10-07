@@ -17,6 +17,7 @@ package_blacklist:
 - ament_black  # python3-uvloop and black have no RPM packages for RHEL
 - ament_download  # Build failures on RHEL https://github.com/samsung-ros/ament_download/pull/3
 - control_box_rst  # coinor-libipopt-dev has no RPM for RHEL 9
+- crocoddyl # Fails to build on all distributions
 - four_wheel_steering_msgs  # Requires unreleased changes
 - fuse_constraints  # Requires unreleased changes
 - gazebo_dev  # Gazebo has no RPM package
