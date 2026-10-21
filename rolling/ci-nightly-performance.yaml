@@ -94,42 +94,24 @@ show_images:
   - ws/test_results/buildfarm_perf_tests/performance_test_results_rmw_fastrtps_cpp_async_*.png
   Performance Test Results - rmw_fastrtps_cpp sync:
   - ws/test_results/buildfarm_perf_tests/performance_test_results_rmw_fastrtps_cpp_sync_*.png
-  Performance Test Results - rmw_fastrtps_dynamic_cpp async:
-  - ws/test_results/buildfarm_perf_tests/performance_test_results_rmw_fastrtps_dynamic_cpp_async_*.png
-  Performance Test Results - rmw_fastrtps_dynamic_cpp sync:
-  - ws/test_results/buildfarm_perf_tests/performance_test_results_rmw_fastrtps_dynamic_cpp_sync_*.png
   Overhead Test Results - rmw_connext_cpp - rmw_connext_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_connext_cpp_Subscriber-rmw_connext_cpp_*.png
   Overhead Test Results - rmw_connext_cpp - rmw_cyclonedds_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_connext_cpp_Subscriber-rmw_cyclonedds_cpp_*.png
   Overhead Test Results - rmw_connext_cpp - rmw_fastrtps_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_connext_cpp_Subscriber-rmw_fastrtps_cpp_*.png
-  Overhead Test Results - rmw_connext_cpp - rmw_fastrtps_dynamic_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_connext_cpp_Subscriber-rmw_fastrtps_dynamic_cpp_*.png
   Overhead Test Results - rmw_cyclonedds_cpp - rmw_connext_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_cyclonedds_cpp_Subscriber-rmw_connext_cpp_*.png
   Overhead Test Results - rmw_cyclonedds_cpp - rmw_cyclonedds_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_cyclonedds_cpp_Subscriber-rmw_cyclonedds_cpp_*.png
   Overhead Test Results - rmw_cyclonedds_cpp - rmw_fastrtps_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_cyclonedds_cpp_Subscriber-rmw_fastrtps_cpp_*.png
-  Overhead Test Results - rmw_cyclonedds_cpp - rmw_fastrtps_dynamic_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_cyclonedds_cpp_Subscriber-rmw_fastrtps_dynamic_cpp_*.png
   Overhead Test Results - rmw_fastrtps_cpp - rmw_connext_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_cpp_Subscriber-rmw_connext_cpp_*.png
   Overhead Test Results - rmw_fastrtps_cpp - rmw_cyclonedds_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_cpp_Subscriber-rmw_cyclonedds_cpp_*.png
   Overhead Test Results - rmw_fastrtps_cpp - rmw_fastrtps_cpp:
   - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_cpp_Subscriber-rmw_fastrtps_cpp_*.png
-  Overhead Test Results - rmw_fastrtps_cpp - rmw_fastrtps_dynamic_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_cpp_Subscriber-rmw_fastrtps_dynamic_cpp_*.png
-  Overhead Test Results - rmw_fastrtps_dynamic_cpp - rmw_connext_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_dynamic_cpp_Subscriber-rmw_connext_cpp_*.png
-  Overhead Test Results - rmw_fastrtps_dynamic_cpp - rmw_cyclonedds_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_dynamic_cpp_Subscriber-rmw_cyclonedds_cpp_*.png
-  Overhead Test Results - rmw_fastrtps_dynamic_cpp - rmw_fastrtps_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_dynamic_cpp_Subscriber-rmw_fastrtps_cpp_*.png
-  Overhead Test Results - rmw_fastrtps_dynamic_cpp - rmw_fastrtps_dynamic_cpp:
-  - ws/test_results/buildfarm_perf_tests/overhead_test_results_Publisher-rmw_fastrtps_dynamic_cpp_Subscriber-rmw_fastrtps_dynamic_cpp_*.png
   Overhead Node Test Results - rmw_connext_cpp async:
   - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_rmw_connext_cpp_async_*.png
   Overhead Node Test Results - rmw_cyclonedds_cpp sync:
@@ -138,10 +120,6 @@ show_images:
   - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_rmw_fastrtps_cpp_async_*.png
   Overhead Node Test Results - rmw_fastrtps_cpp sync:
   - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_rmw_fastrtps_cpp_sync_*.png
-  Overhead Node Test Results - rmw_fastrtps_dynamic_cpp async:
-  - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_rmw_fastrtps_dynamic_cpp_async_*.png
-  Overhead Node Test Results - rmw_fastrtps_dynamic_cpp sync:
-  - ws/test_results/buildfarm_perf_tests/overhead_node_test_results_rmw_fastrtps_dynamic_cpp_sync_*.png
   Performance Test Two Process Results - FastRTPS async:
   - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_FastRTPS_async_*.png
   Performance Test Two Process Results - FastRTPS sync:
@@ -154,10 +132,6 @@ show_images:
   - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_rmw_fastrtps_cpp_async_*.png
   Performance Test Two Process Results - rmw_fastrtps_cpp sync:
   - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_rmw_fastrtps_cpp_sync_*.png
-  Performance Test Two Process Results - rmw_fastrtps_dynamic_cpp async:
-  - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_rmw_fastrtps_dynamic_cpp_async_*.png
-  Performance Test Two Process Results - rmw_fastrtps_dynamic_cpp sync:
-  - ws/test_results/buildfarm_perf_tests/performance_test_two_process_results_rmw_fastrtps_dynamic_cpp_sync_*.png
 show_plots:
   Overhead simple publisher and subscriber - Average Round-Trip Time:
   - title: Simple Pub rmw_fastrtps_cpp_async Average Round-Trip Time
@@ -195,19 +169,6 @@ show_plots:
     exclZero: false
     data_series:
     - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_connext_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 14
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_latency.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Average Round-Trip Time
-    description: "The figure shown above shows the average round-trip time in milisecond. The publisher is set to <b>rmw_fastrtps_dynamic_cpp </b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Milliseconds
-    master_csv_name: plot-overhead_round_trip_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    exclZero: false
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
       data_type: csv
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 14
@@ -267,21 +228,6 @@ show_plots:
     y_axis_maximum: 10
     data_series:
     - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_connext_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 16
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_histogram.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Received messages per second
-    description: "The figure shown above shows the received messages per second. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Messages per second
-    master_csv_name: plot-overhead_received_messages_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 10
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
       data_type: csv
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 16
@@ -347,21 +293,6 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 17
       url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_histogram.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Sent messages per second
-    description: "The figure shown above shows the sent messages per second. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Messages per second
-    master_csv_name: plot-overhead_sent_messages_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 10
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 17
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_histogram.png
   - title: Simple Pub rmw_cyclonedds_cpp Sent messages per second
     description: "The figure shown above shows the sent messages per second. The publisher is set to <b>rmw_cyclonedds_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
     y_axis_label: Messages per second
@@ -416,20 +347,6 @@ show_plots:
     y_axis_maximum: 10
     data_series:
     - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_connext_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 18
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_histogram.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Lost messages
-    description: "The figure shown above shows the lost messages. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Total Count
-    master_csv_name: plot-overhead_lost_messages_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_minimum: 0
-    y_axis_maximum: 10
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
       data_type: csv
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 18
@@ -539,36 +456,6 @@ show_plots:
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 2
       url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_subscriber_virtual_memory.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Virtual Memory
-    description: "The figure shown above shows the virtual memory in Mb used by the publisher. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_virtual_memory_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 1000
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 2
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_virtual_memory.png
-  - title: Simple Sub rmw_fastrtps_dynamic_cpp Virtual Memory
-    description: "The figure shown above shows the virtual memory in Mb used by the subscriber. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_virtual_memory_rmw_fastrtps_dynamic_cpp-1.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 1000
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_sub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 2
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_subscriber_virtual_memory.png
   - title: Simple Pub rmw_cyclonedds_cpp Virtual Memory
     description: "The figure shown above shows the virtual memory in Mb used by the publisher. The publisher is set to <b>rmw_cyclonedds_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
     y_axis_label: Mb
@@ -674,32 +561,6 @@ show_plots:
     y_axis_exclude_zero: true
     data_series:
     - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_connext_cpp_*_sub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 11
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_subscriber_resident_anonymous_memory.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Resident Anonymous Memory
-    description: "The figure shown above shows the resident anonymous memory in Mb used by the publisher. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_resident_anonymous_memory_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 11
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_resident_anonymous_memory.png
-  - title: Simple Sub rmw_fastrtps_dynamic_cpp Resident Anonymous Memory
-    description: "The figure shown above shows the resident anonymous memory in Mb used by the subscriber. The publisher is set to <b>rmw_fastrtps_dynamic_cpp</b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_resident_anonymous_memory_rmw_fastrtps_dynamic_cpp-1.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_sub.csv
       data_type: csv
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 11
@@ -817,36 +678,6 @@ show_plots:
     y_axis_maximum: 100
     data_series:
     - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_connext_cpp_*_sub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 8
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_subscriber_physical_memory.png
-  - title: Simple Pub rmw_fastrtps_dynamic_cpp Physical Memory
-    description: "The figure shown above shows the physical memory in Mb used by the publisher. The publisher is set to <b>rmw_fastrtps_dynamic_cpp </b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_physical_memory_rmw_fastrtps_dynamic_cpp.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 100
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_pub.csv
-      data_type: csv
-      selection_flag: INCLUDE_BY_COLUMN
-      selection_value: 8
-      url: /job/Rci__nightly-performance_ubuntu_resolute_amd64/%build%/artifact/ws/test_results/buildfarm_perf_tests/overhead_test_results_%name%_publisher_physical_memory.png
-  - title: Simple Sub rmw_fastrtps_dynamic_cpp Physical Memory
-    description: "The figure shown above shows the physical memory in Mb used by the subscriber. The publisher is set to <b>rmw_fastrtps_dynamic_cpp </b> but the subscriber will vary between the avaiables. All DDS vendors are configured in asynchronous mode except cycloneDDS which is configured in syncronous mode. <br></br><ul><li><b>QoS</b> Best effort</li><li><b>Rate</b> 5</li><li><b>Runtime</b> 30 seconds</li><li><b>N process</b> 2</li><li><b>Message size</b> 1K</li></ul>"
-    y_axis_label: Mb
-    master_csv_name: plot-overhead_physical_memory_rmw_fastrtps_dynamic_cpp-1.csv
-    style: line
-    num_builds: 10
-    y_axis_exclude_zero: true
-    y_axis_minimum: 0
-    y_axis_maximum: 100
-    data_series:
-    - data_file: ws/test_results/buildfarm_perf_tests/overhead_test_results_rmw_fastrtps_dynamic_cpp_*_sub.csv
       data_type: csv
       selection_flag: INCLUDE_BY_COLUMN
       selection_value: 8
