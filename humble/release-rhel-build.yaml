@@ -23,6 +23,7 @@ package_blacklist:
 - ifm3d_core  # Build failures on RHEL https://github.com/ros2-gbp/ifm3d-release/issues/1
 - ign_rviz_common  # ignition has no RPM packages for RHEL
 - io_context  # asio has no RPM package for RHEL 8
+- kairos  # Kairos needs C++20 (<compare>), which GCC 8 of RHEL 8 does not have
 - libmavconn  # asio has no RPM package for RHEL 8
 - librealsense2  # librealsense SDK is not supported on RHEL / no RPM package
 - moveit_common  # libogre-dev has no RPM package for RHEL
@@ -38,6 +39,23 @@ package_blacklist:
 - openvdb_vendor  # g++ version too old on RHEL for OpenVDB
 - ouster_msgs  # libtins-dev has no RPM package for RHEL
 - pepper_meshes  # Missing license agreement patches for packaging https://github.com/ros-naoqi/pepper_meshes2-release/issues/1
+- plansys2  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_bringup  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_bt_actions  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_core  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_domain_expert  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_executor  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_kairos_plan_solver  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_lifecycle_manager  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_msgs  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_pddl_parser  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_planner  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_popf_plan_solver  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_problem_expert  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_support_py  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_terminal  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_tools  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
+- plansys2_tui_cli  # PlanSys2 needs C++20, which GCC 8 of RHEL 8 does not have
 - popf  # COIN-OR packages have no RPM packages for RHEL 8
 - realsense2_camera  # depends on librealsense2, which is not supported on RHEL
 - realsense2_camera_msgs  # part of realsense-ros; librealsense2 not supported on RHEL
